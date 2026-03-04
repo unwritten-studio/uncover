@@ -1,0 +1,51 @@
+---
+title: "Uncover"
+subtitle: "Worte werden Welten"
+author: "Unwritten Team"
+date: "2025"
+lang: de
+documentclass: book
+geometry:
+  - a5paper
+  - top=20mm
+  - left=20mm
+  - right=20mm
+  - bottom=35mm
+  - footskip=15mm
+fontsize: 11pt
+linestretch: 1.2
+mainfont: "Avenir Next"
+sansfont: "Avenir Next"
+colorlinks: true
+linkcolor: UnwrittenBlue
+urlcolor: UnwrittenBlue
+header-includes: |
+  \AtBeginDocument{%
+    \includepdf[pages=1,fitpaper=true]{assets/images/uncover-cover.jpeg}%
+  }
+  \usepackage{xcolor}
+  \definecolor{UnwrittenBlue}{HTML}{3987b8}
+  \definecolor{UnwrittenBlack}{HTML}{3e4447}
+  \definecolor{UnwrittenGrey}{HTML}{f4f5f5}
+  \usepackage{fancyhdr}
+  \usepackage{pdfpages}
+  \usepackage{tikz}
+  \pagestyle{fancy}
+  \fancyhf{}
+  \fancyhead[LE]{\thepage\hspace{15mm}\parbox[t]{0.7\textwidth}{\small\itshape\fontseries{l}\selectfont\raggedright\setlength{\baselineskip}{1.3\baselineskip}\nouppercase{\leftmark}}}
+  \fancyhead[RO]{\thepage}
+  \renewcommand{\headrulewidth}{0.5pt}
+  \renewcommand{\headrule}{\hbox to\headwidth{\color{UnwrittenBlue}\leaders\hrule height \headrulewidth\hfill}}
+  \setlength{\headsep}{22mm}
+  \setlength{\headheight}{28pt}
+  \usepackage{titlesec}
+  \titlespacing*{\chapter}{0pt}{20pt}{40pt}
+  \titlespacing*{\section}{0pt}{15pt}{10pt}
+  \usepackage{tocloft}
+  \renewcommand{\cfttoctitlefont}{\Large\fontseries{l}\selectfont}
+  \renewcommand{\cftchapfont}{\normalsize\fontseries{l}\selectfont}
+  \renewcommand{\cftsecfont}{\small\fontseries{l}\selectfont}
+  \renewcommand{\cftsubsecfont}{\small\fontseries{l}\selectfont}
+  \renewcommand{\cftchappagefont}{\normalsize\fontseries{l}\selectfont}
+  \renewcommand{\cftsecpagefont}{\small\fontseries{l}\selectfont}
+---

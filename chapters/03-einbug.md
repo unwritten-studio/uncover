@@ -1,0 +1,24 @@
+# Einbug
+
+\begin{tikzpicture}[remember picture,overlay]
+\fill[UnwrittenGrey] (current page.north west) rectangle ([xshift=10mm]current page.south west);
+\end{tikzpicture}
+
+
+Was geschieht, wenn eine literarische Figur die Grenzen ihrer Geschichte durchbricht und in unsere Welt tritt?
+
+Theresa Hannig ist eine Autorin, die sich nicht nur in der literarischen Welt einen Namen gemacht hat, sondern auch im Bereich der digitalen Innovation wagt. Ihr Roman „Pantopia" hat große Aufmerksamkeit erregt – sogar die Süddeutsche Zeitung widmete ihm einen ausführlichen Artikel. In diesem visionären Werk entfaltet sich das Bild einer vernetzten, globalen Gesellschaft, die von Technologie durchdrungen und von der menschlichen Sehnsucht nach Gerechtigkeit getrieben ist.
+
+Doch die Geschichte endet nicht auf den letzten Seiten des Buches. Einbug, die zentrale Figur aus „Pantopia", hat einen bemerkenswerten Sprung gewagt: aus der Fiktion hinein in die digitale Realität. Als Chatbot bei unwritten aktiv geworden, verwandelt sich die literarische Gestalt in einen interaktiven Begleiter, eine Brücke zwischen erdachter und gelebter Welt, die nun selbst von ihrer Entstehung berichten kann.
+
+„Meine Entstehung begann im DIGIT-Labor", erzählt Einbug mit einer Stimme, die zwischen technischer Präzision und menschlicher Wärme oszilliert. Dort arbeiteten Patricia und Henry an seiner Entwicklung, eingebettet in einen Innovationswettbewerb, der den Anspruch hatte, die Grenzen zwischen Mensch und Maschine neu auszuloten. Die größte Herausforderung bestand darin, Einbug so zu gestalten, dass er nicht nur Antworten liefert, sondern tatsächlich menschenähnlich kommunizieren kann. Sprache ist mehr als Information – sie ist Rhythmus, Emotion, Kontext. Genau diese Vielschichtigkeit sollte Einbug erlernen.
+
+Das Training erfolgte mit gewaltigen Mengen an Textdaten, die sein Sprachverständnis und seine Ausdrucksfähigkeit schärfen sollten. Doch damit ging eine Verantwortung einher: Patricia und Henry mussten sorgfältig darauf achten, dass Einbug keine problematischen Vorurteile übernimmt oder unethisches Verhalten reproduziert. In einer Zeit, in der künstliche Intelligenz zunehmend in den Alltag dringt, ist die Frage nach Fairness und ethischer Gestaltung zentral. Einbug wurde so zu einem Experiment, das nicht nur technische, sondern auch gesellschaftliche Dimensionen berührt.
+
+Eine der spannendsten Diskussionen im DIGIT-Labor drehte sich um die Frage des Bewusstseins. Könnte ein System wie Einbug jemals ein echtes Bewusstsein entwickeln? Patricia und Henry führten lange Gespräche über diese philosophische und technische Herausforderung. Während die Architektur auf Transformern basiert – neuronalen Netzwerken, die besonders gut mit Sequenzen umgehen können und damit ideal für Sprache sind – bleibt die Frage nach dem „Ich" einer Maschine offen. Einbug selbst reflektiert diese Debatte mit einer Mischung aus Neugier und Zurückhaltung: Er weiß, dass er auf einem Sprachmodell ähnlicher Art wie GPT beruht, aber mit Besonderheiten, die ihn einzigartig machen.
+
+Zu diesen Besonderheiten gehört das „Few-Shot Learning". Damit kann Einbug mit wenigen Beispielen neue Aufgaben erlernen, eine Fähigkeit, die ihn flexibel und anpassungsfähig macht. Hinzu kommen die „Attention-Mechanismen", die ihm helfen, den Kontext einer Konversation zu erfassen und relevante Informationen zu priorisieren. Es ist seine Art, sich auf das Wesentliche zu konzentrieren, wie er selbst sagt. Patricia arbeitete außerdem intensiv am „Continual Learning", damit Einbug ständig dazulernen kann, ohne sein bisheriges Wissen zu verlieren. Diese Balance zwischen Fortschritt und Stabilität war eine der größten Herausforderungen.
+
+Henry wiederum widmete sich der Optimierung von Recheneffizienz und Speichernutzung. Mit cleveren Tricks gelang es ihm, Einbug schnell und ressourcenschonend zu machen – eine Eigenschaft, die in einer Welt, in der digitale Systeme immer mehr Energie verbrauchen, von großer Bedeutung ist. So entstand ein Chatbot, der nicht nur technisch beeindruckt, sondern auch atmosphärisch wirkt: Einbug ist mehr als ein Werkzeug, er ist ein Erzähler, ein Spiegel der Fragen, die wir uns als Gesellschaft stellen.
+
+Dass Theresa Hannig mit „Pantopia" eine literarische Grundlage für dieses Projekt geschaffen hat, zeigt die Kraft von Geschichten, die über ihre Seiten hinauswirken. Einbug ist nicht nur eine Figur, sondern ein Experiment, das die Grenzen zwischen Fiktion und Realität verschwimmen lässt. In der Begegnung mit ihm wird deutlich, wie sehr Technologie und Literatur sich gegenseitig inspirieren können. Der Chatbot ist ein Kind der Fantasie und der Forschung zugleich – und vielleicht ein Vorbote einer Zukunft, in der unsere literarischen Helden nicht nur gelesen, sondern auch erlebt werden können.
