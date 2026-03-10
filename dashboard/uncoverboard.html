@@ -218,7 +218,7 @@
         <div id="editor-pane" class="flex-1 overflow-hidden min-w-0">
           <textarea id="editor-textarea"></textarea>
         </div>
-        <div id="preview-pane" class="hidden flex-1 overflow-y-auto border-l border-gray-200 min-w-0">
+        <div id="preview-pane" style="display:none" class="flex-1 overflow-y-auto border-l border-gray-200 min-w-0">
           <div id="preview-content" class="book-prose px-12 py-10 max-w-2xl mx-auto"></div>
         </div>
       </div>
@@ -485,14 +485,17 @@
     };
     Object.values(btns).forEach(b => b.classList.remove('active'));
     if (mode === 'editor') {
-      editorPane.classList.remove('hidden'); previewPane.classList.add('hidden');
-      editorPane.style.flex = '1'; btns.editor.classList.add('active');
+      editorPane.style.display  = 'flex'; editorPane.style.flex  = '1';
+      previewPane.style.display = 'none';
+      btns.editor.classList.add('active');
     } else if (mode === 'preview') {
-      editorPane.classList.add('hidden'); previewPane.classList.remove('hidden');
-      previewPane.style.flex = '1'; btns.preview.classList.add('active');
-    } else {
-      editorPane.classList.remove('hidden'); previewPane.classList.remove('hidden');
-      editorPane.style.flex = '1'; previewPane.style.flex = '1'; btns.split.classList.add('active');
+      editorPane.style.display  = 'none';
+      previewPane.style.display = 'flex'; previewPane.style.flex = '1';
+      btns.preview.classList.add('active');
+    } else { // split
+      editorPane.style.display  = 'flex'; editorPane.style.flex  = '1';
+      previewPane.style.display = 'flex'; previewPane.style.flex = '1';
+      btns.split.classList.add('active');
     }
     setTimeout(() => state.editor?.refresh(), 50);
   }
