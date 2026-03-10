@@ -11,11 +11,7 @@
       theme: {
         extend: {
           colors: {
-            brand: {
-              blue:  '#3987b8',
-              black: '#3e4447',
-              grey:  '#f4f5f5',
-            }
+            brand: { blue: '#3987b8', black: '#3e4447', grey: '#f4f5f5' }
           }
         }
       }
@@ -25,9 +21,137 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.css">
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ── Brand variables ──────────────────────────────────────────────── */
+    :root {
+      --blue:  #3987b8;
+      --black: #3e4447;
+      --grey:  #f4f5f5;
+      --font:  'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: var(--font);
+      font-weight: 300;
+      color: var(--black);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header h1 { font-weight: 300; letter-spacing: 0.2em; }
+
+    /* ── Sidebar ──────────────────────────────────────────────────────── */
+    .chapter-item {
+      width: 100%; text-align: left; padding: 0.6rem 1rem;
+      border-bottom: 1px solid #e4e5e6; cursor: pointer;
+      transition: background 0.1s; display: block;
+    }
+    .chapter-item:hover  { background: #eaebec; }
+    .chapter-item.active {
+      background: white;
+      border-left: 3px solid var(--blue);
+      padding-left: calc(1rem - 3px);
+    }
+    .chapter-num {
+      font-weight: 300; font-size: 0.7rem; color: #9ca3af;
+      min-width: 1.5rem; flex-shrink: 0;
+    }
+    .chapter-name {
+      font-weight: 400; font-size: 0.85rem;
+      color: var(--black); line-height: 1.35;
+    }
+    .chapter-meta {
+      font-weight: 300; font-size: 0.72rem; color: #9ca3af;
+      margin-top: 0.2rem; padding-left: 1.6rem; line-height: 1.4;
+    }
+    #sidebar-stats { font-weight: 300; line-height: 1.6; }
+
+    /* ── View toggle buttons ──────────────────────────────────────────── */
+    .view-btn {
+      font-family: var(--font); font-weight: 400;
+      background: white; color: #6b7280;
+      transition: background 0.15s, color 0.15s;
+    }
+    .view-btn:hover  { background: #f9fafb; }
+    .view-btn.active { background: var(--blue); color: white; }
+
+    /* ── CodeMirror ───────────────────────────────────────────────────── */
+    #editor-pane { display: flex; flex-direction: column; background: white; }
+
+    #editor-pane .CodeMirror {
+      flex: 1; height: 100%;
+      font-family: var(--font); font-weight: 300;
+      font-size: 15px; line-height: 1.75;
+      color: var(--black); background: white;
+      border: none; padding: 2.5rem 3.5rem; box-sizing: border-box;
+    }
+    #editor-pane .CodeMirror-scroll  { padding: 0; }
+    #editor-pane .CodeMirror-lines   { padding: 0; }
+    #editor-pane .CodeMirror-cursor  { border-left: 2px solid var(--blue); }
+    #editor-pane .CodeMirror-selected { background: rgba(57,135,184,0.1) !important; }
+
+    /* LaTeX lines */
+    #editor-pane .cm-latex-line { background: #f0f1f2 !important; }
+    #editor-pane .cm-latex-text { color: #b0b7bc !important; }
+    #editor-pane .cm-latex-text .cm-link,
+    #editor-pane .cm-latex-text .cm-url,
+    #editor-pane .cm-latex-text .cm-string-2 {
+      color: #b0b7bc !important; text-decoration: none !important;
+    }
+
+    /* Headings in editor */
+    #editor-pane .CodeMirror .cm-header-1 {
+      font-size: 1.45em; font-weight: 300; color: var(--blue); line-height: 1.3;
+    }
+    #editor-pane .CodeMirror .cm-header-2 {
+      font-size: 1.1em; font-weight: 500; color: var(--black); line-height: 1.4;
+    }
+    #editor-pane .CodeMirror .cm-header-3 {
+      font-size: 1em; font-weight: 500; color: #6b7a84;
+      line-height: 1.4; font-style: italic;
+    }
+
+    /* ── Book prose (preview) ─────────────────────────────────────────── */
+    .book-prose {
+      font-family: var(--font); font-weight: 300;
+      font-size: 15px; line-height: 1.75; color: var(--black);
+    }
+    .book-prose h1 {
+      font-weight: 300; font-size: 1.7rem; line-height: 1.2;
+      margin: 0 0 2rem; color: var(--blue); letter-spacing: -0.01em;
+    }
+    .book-prose h2 {
+      font-weight: 500; font-size: 1.05rem;
+      margin: 2.5rem 0 0.75rem; color: var(--black); letter-spacing: 0.01em;
+    }
+    .book-prose h3 {
+      font-weight: 400; font-size: 0.95rem;
+      margin: 2rem 0 0.5rem; font-style: italic;
+    }
+    .book-prose p { margin: 0 0 1.25rem; }
+    .book-prose blockquote {
+      border-left: 3px solid var(--blue); margin: 1.75rem 0;
+      padding: 0.25rem 1.25rem; color: #666; font-style: italic;
+    }
+    .book-prose blockquote p { margin: 0; }
+    .book-prose hr { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
+    .book-prose code {
+      font-family: 'Courier New', monospace; font-size: 0.875em;
+      background: var(--grey); padding: 0.1em 0.35em; border-radius: 3px;
+    }
+
+    /* ── Misc ─────────────────────────────────────────────────────────── */
+    #chapter-title  { font-weight: 400; font-size: 0.95rem; }
+    .dirty-dot::after { content: ' •'; color: var(--blue); }
+
+    ::-webkit-scrollbar       { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+  </style>
 </head>
 
 <body class="bg-white text-brand-black h-screen flex flex-col overflow-hidden">
@@ -67,7 +191,7 @@
     <!-- Content area -->
     <div class="flex-1 flex flex-col overflow-hidden min-w-0">
 
-      <!-- Chapter header bar (hidden until chapter opened) -->
+      <!-- Chapter header bar -->
       <div id="editor-header"
         class="hidden bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between flex-shrink-0">
         <h2 class="font-normal text-brand-black truncate mr-4" id="chapter-title">—</h2>
@@ -103,14 +227,13 @@
   </div>
 
   <!-- ── Token modal ────────────────────────────────────────────────── -->
-  <div id="token-modal"
-    class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 p-4">
+  <div id="token-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 p-4">
     <div class="bg-white rounded-lg p-6 w-full max-w-sm shadow-2xl">
       <h3 class="font-medium mb-1">GitHub Access Token</h3>
       <p class="text-sm text-gray-500 mb-4">
-        Zum Speichern von Änderungen wird ein Personal Access Token mit
+        Zum Speichern wird ein Personal Access Token mit
         <code class="bg-gray-100 px-1 rounded text-xs">repo</code>-Berechtigung benötigt.<br>
-        <a href="https://github.com/settings/tokens/new?scopes=repo&description=Uncover+Dashboard"
+        <a href="https://github.com/settings/personal-access-tokens/new"
           target="_blank" class="text-brand-blue hover:underline text-sm">Token bei GitHub erstellen →</a>
       </p>
       <input type="password" id="token-input" placeholder="ghp_…"
@@ -119,8 +242,7 @@
         <button id="token-clear" class="text-xs text-red-400 hover:text-red-600">Token löschen</button>
         <div class="flex gap-2">
           <button id="token-cancel" class="text-sm text-gray-500 px-4 py-2 hover:text-gray-700">Abbrechen</button>
-          <button id="token-save"
-            class="text-sm bg-brand-blue text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+          <button id="token-save" class="text-sm bg-brand-blue text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
             Speichern
           </button>
         </div>
@@ -128,10 +250,352 @@
     </div>
   </div>
 
-  <!-- ── Scripts ────────────────────────────────────────────────────── -->
+  <!-- ── External libraries ─────────────────────────────────────────── -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/codemirror.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.16/mode/markdown/markdown.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
-  <script src="app.js"></script>
+
+  <script>
+  'use strict';
+
+  // ── Config ────────────────────────────────────────────────────────────────
+  const OWNER         = 'unwritten-studio';
+  const REPO          = 'uncover';
+  const CHAPTERS_PATH = 'chapters';
+  const READING_WPM   = 200;
+
+  // ── State ─────────────────────────────────────────────────────────────────
+  const state = {
+    token:         localStorage.getItem('uncover_token') || '',
+    chapters:      [],
+    currentIndex:  null,
+    editor:        null,
+    isDirty:       false,
+    viewMode:      'editor',
+    _previewTimer: null,
+    _statsTimer:   null,
+  };
+
+  // ── GitHub API ────────────────────────────────────────────────────────────
+  async function apiRequest(path, options = {}) {
+    const headers = { 'Accept': 'application/vnd.github.v3+json' };
+    if (state.token) headers['Authorization'] = `token ${state.token}`;
+    if (options.body) headers['Content-Type'] = 'application/json';
+
+    const res = await fetch(`https://api.github.com${path}`, { ...options, headers });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.message || `HTTP ${res.status}`);
+    }
+    return res.json();
+  }
+
+  const fetchChapterList    = () => apiRequest(`/repos/${OWNER}/${REPO}/contents/${CHAPTERS_PATH}`);
+  const fetchChapterContent = async (filePath) => {
+    const data = await apiRequest(`/repos/${OWNER}/${REPO}/contents/${filePath}`);
+    return { content: fromBase64(data.content), sha: data.sha };
+  };
+  const saveChapter = (filePath, content, sha, message) =>
+    apiRequest(`/repos/${OWNER}/${REPO}/contents/${filePath}`, {
+      method: 'PUT',
+      body: JSON.stringify({ message, content: toBase64(content), sha }),
+    });
+
+  // ── Encoding (UTF-8 safe) ─────────────────────────────────────────────────
+  const toBase64   = str => btoa(unescape(encodeURIComponent(str)));
+  const fromBase64 = str => decodeURIComponent(escape(atob(str.replace(/\n/g, ''))));
+
+  // ── Text utilities ────────────────────────────────────────────────────────
+  function stripLatex(text) {
+    return text
+      .replace(/\\begin\{[^}]+\}[\s\S]*?\\end\{[^}]+\}/g, '')
+      .replace(/\\[a-zA-Z]+\[[^\]]*\]\{[^}]*\}/g, '')
+      .replace(/\\[a-zA-Z]+\{[^}]*\}/g, '')
+      .replace(/\\[a-zA-Z]+/g, '')
+      .replace(/\n{3,}/g, '\n\n')
+      .trim();
+  }
+
+  const extractTitle = content => { const m = content.match(/^#\s+(.+)$/m); return m ? m[1].trim() : null; };
+  const wordCount    = text => stripLatex(text).trim().split(/\s+/).filter(Boolean).length;
+  const readingTime  = words => `${Math.ceil(words / READING_WPM)} Min.`;
+  const pageCount    = words => `~${Math.ceil(words / 165)} S.`; // kalibriert: 165 Wörter/Seite A5
+
+  function infoFromFilename(filename) {
+    const parts = filename.replace('.md', '').split('-');
+    const num   = parseInt(parts[0]);
+    if (num === 0)  return { num: '', title: 'Titelseite' };
+    if (num === 99) return { num: '', title: 'Rückseite' };
+    return { num: parts[0], title: parts.slice(1).map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') };
+  }
+
+  // ── Token ─────────────────────────────────────────────────────────────────
+  function setToken(token) {
+    state.token = token;
+    token ? localStorage.setItem('uncover_token', token) : localStorage.removeItem('uncover_token');
+    updateTokenUI();
+  }
+  function updateTokenUI() {
+    const btn = document.getElementById('token-btn');
+    btn.textContent = state.token ? '⚙ Token ✓' : '⚙ Token';
+    btn.style.opacity = state.token ? '0.85' : '0.5';
+  }
+
+  // ── Sidebar ───────────────────────────────────────────────────────────────
+  function renderChapterList() {
+    const list = document.getElementById('chapter-list');
+    list.innerHTML = '';
+    state.chapters.forEach(chapter => {
+      const { num, title } = infoFromFilename(chapter.name);
+      const isActive = state.currentIndex !== null &&
+        state.chapters[state.currentIndex]?.name === chapter.name;
+      const btn = document.createElement('button');
+      btn.className = `chapter-item${isActive ? ' active' : ''}`;
+      btn.innerHTML = `
+        <div class="flex items-start gap-2">
+          ${num ? `<span class="chapter-num pt-0.5">${num}</span>` : ''}
+          <span class="chapter-name">${chapter.title || title}</span>
+        </div>
+        ${chapter.words ? `
+          <div class="chapter-meta">
+            ${chapter.words.toLocaleString('de')} Wörter · ${pageCount(chapter.words)} · ${readingTime(chapter.words)}
+          </div>` : ''}
+      `;
+      btn.addEventListener('click', () => openChapter(chapter));
+      list.appendChild(btn);
+    });
+    renderSidebarStats();
+  }
+
+  function renderSidebarStats() {
+    const loaded     = state.chapters.filter(c => c.words != null);
+    const totalWords = loaded.reduce((sum, c) => sum + c.words, 0);
+    const el = document.getElementById('sidebar-stats');
+    el.innerHTML = totalWords > 0
+      ? `${state.chapters.length} Kapitel<br>${totalWords.toLocaleString('de')} Wörter · ${pageCount(totalWords)}<br>ca. ${readingTime(totalWords)} Lesezeit`
+      : `${state.chapters.length} Kapitel`;
+  }
+
+  function updateBookStats() {
+    const totalWords = state.chapters.filter(c => c.words != null).reduce((sum, c) => sum + c.words, 0);
+    document.getElementById('book-stats').textContent = totalWords > 0
+      ? `${state.chapters.length} Kapitel · ${totalWords.toLocaleString('de')} Wörter · ${pageCount(totalWords)}`
+      : `${state.chapters.length} Kapitel`;
+  }
+
+  // ── Open chapter ──────────────────────────────────────────────────────────
+  async function openChapter(chapter) {
+    try {
+      if (!chapter.content) {
+        const { content, sha } = await fetchChapterContent(chapter.path);
+        chapter.content = content;
+        chapter.sha     = sha;
+        chapter.title   = extractTitle(content) || infoFromFilename(chapter.name).title;
+        chapter.words   = wordCount(content);
+      }
+      state.currentIndex = state.chapters.indexOf(chapter);
+      state.isDirty      = false;
+
+      document.getElementById('welcome-screen').classList.add('hidden');
+      document.getElementById('editor-area').classList.remove('hidden');
+      document.getElementById('editor-header').classList.remove('hidden');
+
+      updateEditorContent(chapter.content);
+      updatePreview(chapter.content);
+      updateChapterHeader(chapter);
+      updateSaveButton();
+      renderChapterList();
+    } catch (err) {
+      alert(`Kapitel konnte nicht geladen werden:\n${err.message}`);
+    }
+  }
+
+  // ── LaTeX line highlighting ───────────────────────────────────────────────
+  function applyLatexLineStyles() {
+    const editor    = state.editor;
+    const lineCount = editor.lineCount();
+    let insideBlock = false;
+    for (let i = 0; i < lineCount; i++) {
+      const text    = editor.getLine(i).trim();
+      const isLatex = text.startsWith('\\') || insideBlock;
+      if (text.startsWith('\\begin{')) insideBlock = true;
+      if (text.startsWith('\\end{'))   insideBlock = false;
+      if (isLatex) {
+        editor.addLineClass(i, 'background', 'cm-latex-line');
+        editor.addLineClass(i, 'text',       'cm-latex-text');
+      } else {
+        editor.removeLineClass(i, 'background', 'cm-latex-line');
+        editor.removeLineClass(i, 'text',       'cm-latex-text');
+      }
+    }
+  }
+
+  // ── Editor ────────────────────────────────────────────────────────────────
+  function initEditor() {
+    state.editor = CodeMirror.fromTextArea(document.getElementById('editor-textarea'), {
+      mode: 'markdown', lineWrapping: true, lineNumbers: false,
+      autofocus: false, theme: 'default',
+      extraKeys: { 'Ctrl-S': saveCurrentChapter, 'Cmd-S': saveCurrentChapter },
+    });
+
+    state.editor.on('change', () => {
+      if (state.currentIndex === null) return;
+      if (!state.isDirty) {
+        state.isDirty = true;
+        updateSaveButton();
+        document.getElementById('chapter-title').classList.add('dirty-dot');
+      }
+      clearTimeout(state._previewTimer);
+      state._previewTimer = setTimeout(() => {
+        updatePreview(state.editor.getValue());
+        applyLatexLineStyles();
+      }, 500);
+      clearTimeout(state._statsTimer);
+      state._statsTimer = setTimeout(() => {
+        const chapter = state.chapters[state.currentIndex];
+        if (!chapter) return;
+        chapter.words = wordCount(state.editor.getValue());
+        updateChapterHeader(chapter);
+        renderSidebarStats();
+      }, 1500);
+    });
+  }
+
+  function updateEditorContent(content) {
+    state.editor.setValue(content);
+    state.editor.clearHistory();
+    state.editor.scrollTo(0, 0);
+    setTimeout(() => { state.editor.refresh(); applyLatexLineStyles(); }, 50);
+  }
+
+  // ── Preview ───────────────────────────────────────────────────────────────
+  function updatePreview(content) {
+    document.getElementById('preview-content').innerHTML = marked.parse(stripLatex(content));
+  }
+
+  // ── View modes ────────────────────────────────────────────────────────────
+  function setViewMode(mode) {
+    state.viewMode = mode;
+    const editorPane  = document.getElementById('editor-pane');
+    const previewPane = document.getElementById('preview-pane');
+    const btns = {
+      editor:  document.getElementById('view-editor'),
+      split:   document.getElementById('view-split'),
+      preview: document.getElementById('view-preview'),
+    };
+    Object.values(btns).forEach(b => b.classList.remove('active'));
+    if (mode === 'editor') {
+      editorPane.classList.remove('hidden'); previewPane.classList.add('hidden');
+      editorPane.style.flex = '1'; btns.editor.classList.add('active');
+    } else if (mode === 'preview') {
+      editorPane.classList.add('hidden'); previewPane.classList.remove('hidden');
+      previewPane.style.flex = '1'; btns.preview.classList.add('active');
+    } else {
+      editorPane.classList.remove('hidden'); previewPane.classList.remove('hidden');
+      editorPane.style.flex = '1'; previewPane.style.flex = '1'; btns.split.classList.add('active');
+    }
+    setTimeout(() => state.editor?.refresh(), 50);
+  }
+
+  // ── Save ──────────────────────────────────────────────────────────────────
+  async function saveCurrentChapter() {
+    if (state.currentIndex === null || !state.isDirty) return;
+    if (!state.token) { openTokenModal(); return; }
+
+    const chapter = state.chapters[state.currentIndex];
+    const content = state.editor.getValue();
+    const btn = document.getElementById('save-btn');
+    btn.textContent = 'Speichern…'; btn.disabled = true;
+
+    try {
+      const result    = await saveChapter(chapter.path, content, chapter.sha, `Update: ${chapter.title || chapter.name}`);
+      chapter.content = content;
+      chapter.sha     = result.content.sha;
+      chapter.words   = wordCount(content);
+      state.isDirty   = false;
+      document.getElementById('chapter-title').classList.remove('dirty-dot');
+      btn.textContent = 'Gespeichert ✓';
+      setTimeout(() => { btn.textContent = 'Speichern'; updateSaveButton(); }, 2500);
+    } catch (err) {
+      btn.textContent = 'Fehler'; btn.disabled = false;
+      alert(`Speichern fehlgeschlagen:\n${err.message}`);
+      setTimeout(() => { btn.textContent = 'Speichern'; updateSaveButton(); }, 3000);
+    }
+  }
+
+  function updateSaveButton() {
+    const btn = document.getElementById('save-btn');
+    btn.classList.toggle('hidden', state.currentIndex === null);
+    btn.disabled = !state.isDirty;
+  }
+
+  function updateChapterHeader(chapter) {
+    document.getElementById('chapter-title').textContent = chapter.title || chapter.name;
+    const words = chapter.words || 0;
+    document.getElementById('chapter-stats').textContent = words
+      ? `${words.toLocaleString('de')} Wörter · ${pageCount(words)} · ${readingTime(words)}` : '';
+  }
+
+  // ── Token modal ───────────────────────────────────────────────────────────
+  const openTokenModal  = () => {
+    document.getElementById('token-input').value = state.token;
+    document.getElementById('token-modal').classList.remove('hidden');
+    document.getElementById('token-input').focus();
+  };
+  const closeTokenModal = () => document.getElementById('token-modal').classList.add('hidden');
+
+  // ── Background stats loader ───────────────────────────────────────────────
+  async function fetchAllChapterStats() {
+    const BATCH = 4;
+    for (let i = 0; i < state.chapters.length; i += BATCH) {
+      await Promise.all(state.chapters.slice(i, i + BATCH).map(async chapter => {
+        if (chapter.content) return;
+        try {
+          const { content, sha } = await fetchChapterContent(chapter.path);
+          chapter.content = content; chapter.sha = sha;
+          chapter.title   = extractTitle(content) || infoFromFilename(chapter.name).title;
+          chapter.words   = wordCount(content);
+          renderChapterList(); updateBookStats();
+        } catch (_) {}
+      }));
+    }
+  }
+
+  // ── Init ──────────────────────────────────────────────────────────────────
+  async function init() {
+    updateTokenUI(); initEditor(); setViewMode('editor');
+
+    document.getElementById('token-btn')   .addEventListener('click', openTokenModal);
+    document.getElementById('token-cancel').addEventListener('click', closeTokenModal);
+    document.getElementById('token-clear') .addEventListener('click', () => { setToken(''); closeTokenModal(); });
+    document.getElementById('token-save')  .addEventListener('click', () => {
+      setToken(document.getElementById('token-input').value.trim()); closeTokenModal();
+    });
+    document.getElementById('token-input') .addEventListener('keydown', e => {
+      if (e.key === 'Enter') document.getElementById('token-save').click();
+      if (e.key === 'Escape') closeTokenModal();
+    });
+    document.getElementById('token-modal') .addEventListener('click', e => { if (e.target === e.currentTarget) closeTokenModal(); });
+    document.getElementById('save-btn')    .addEventListener('click', saveCurrentChapter);
+    document.getElementById('view-editor') .addEventListener('click', () => setViewMode('editor'));
+    document.getElementById('view-split')  .addEventListener('click', () => setViewMode('split'));
+    document.getElementById('view-preview').addEventListener('click', () => setViewMode('preview'));
+
+    try {
+      const files = await fetchChapterList();
+      state.chapters = files
+        .filter(f => f.name.endsWith('.md'))
+        .sort((a, b) => a.name.localeCompare(b.name))
+        .map(f => ({ name: f.name, path: f.path, sha: f.sha, title: null, words: null, content: null }));
+      renderChapterList(); updateBookStats();
+      fetchAllChapterStats();
+    } catch (err) {
+      document.getElementById('chapter-list').innerHTML =
+        `<div class="p-4 text-sm text-red-500">Fehler beim Laden: ${err.message}</div>`;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', init);
+  </script>
 </body>
 </html>
