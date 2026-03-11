@@ -1,4 +1,4 @@
-# Science Fiction: Theresa Hannig – Autorin für Hoffnung in Zeiten der Krise
+# Science Fiction  Autorin für Hoffnung in Zeiten der Krise
 
 In einer Welt, die geprägt ist von multiplen Krisen, Daueralarm und dystopischen Zukunftsbildern, fällt es vielen Menschen zunehmend schwer, an eine lebenswerte Zukunft zu glauben, geschweige denn, sie aktiv mitzugestalten.
 
