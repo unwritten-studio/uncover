@@ -7,13 +7,13 @@ lang: de
 documentclass: book
 geometry:
   - a5paper
-  - top=20mm
-  - left=20mm
-  - right=20mm
-  - bottom=35mm
-  - footskip=15mm
-fontsize: 10pt
-linestretch: 1.0
+  - top=14mm
+  - left=14mm
+  - right=14mm
+  - bottom=25mm
+  - footskip=10mm
+fontsize: 9pt
+linestretch: 0.85
 mainfont: "Avenir Next"
 sansfont: "Avenir Next"
 colorlinks: true
