@@ -12,8 +12,8 @@ geometry:
   - right=20mm
   - bottom=35mm
   - footskip=15mm
-fontsize: 11pt
-linestretch: 1.2
+fontsize: 10pt
+linestretch: 1.0
 mainfont: "Avenir Next"
 sansfont: "Avenir Next"
 colorlinks: true
