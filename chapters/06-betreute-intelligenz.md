@@ -1,4 +1,4 @@
-# Betreute Intelligenz – Stefan Probst
+# Betreute Intelligenz 
 
 Das Telefon klingelt an einem Donnerstagabend bei Bernhard. Stefan aus Erlangen. Sie kennen sich seit den 90ern, als man noch CD-ROMs brannte, physisches Wissen auf Silberscheiben. Heute sind CDs Nostalgie, aber diese Gespräche über offene Systeme sind geblieben. Nur die Themen haben sich verschoben. „Betreute Intelligenz", erklärt Stefan mit dieser sachlichen Ruhe, die keine Zeit verschwendet, „ist kein Verein. Es ist ein Raum." In Erlangen treffen sich Entwickler und Kreative, trinken starken Kaffee und lassen ihre Laptops offen. Es gibt keine Agenda, nur die stille Übereinkunft, dass KI interessanter wird, wenn man sie nicht alleine lässt.
 
