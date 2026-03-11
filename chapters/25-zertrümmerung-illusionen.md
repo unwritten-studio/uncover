@@ -108,7 +108,7 @@ Wenn Ihr Verlag diesen Raum selbst gestaltet, können Sie bestimmen, was der Les
 
 Und noch ein letzter Gedanke, der mir wichtig ist: Es gibt eine Form der Kommunikation, die diesen Ansatz nicht verteidigen, sondern feiern kann. Unser Verlag nutzt Technologie, um echte Autoren zu schützen und echte Werke erlebbar zu machen, nicht um sie zu ersetzen. Das ist kein Angriffspunkt. Das ist eine Position. Und in einem Markt voller generierter Massenware ist es eine, die auffällt. Ich freue mich sehr auf Ihre Gedanken, und auf ein Gespräch, das wir gerne auch mit einem Ihrer Autoren führen würden, wenn Sie das für sinnvoll halten.
 
-Mit herzlichen Grüßen, Stefan Probst
+Mit herzlichen Grüßen, Stefan P.
 
 ---
 
