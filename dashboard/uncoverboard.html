@@ -164,6 +164,7 @@
       <span class="text-sm opacity-50" id="book-stats">Lade Kapitel…</span>
     </div>
     <div class="flex items-center gap-3">
+      <span id="version-ts" class="text-xs opacity-30 font-mono tabular-nums"></span>
       <button id="token-btn" class="text-xs opacity-50 hover:opacity-90 transition-opacity px-2 py-1 rounded hover:bg-white/10">
         ⚙ Token
       </button>
@@ -319,7 +320,7 @@
   const extractTitle = content => { const m = content.match(/^#\s+(.+)$/m); return m ? m[1].trim() : null; };
   const wordCount    = text => stripLatex(text).trim().split(/\s+/).filter(Boolean).length;
   const readingTime  = words => `${Math.ceil(words / READING_WPM)} Min.`;
-  const pageCount    = words => `~${Math.ceil(words / 165)} S.`; // kalibriert: 165 Wörter/Seite A5
+  const pageCount    = words => `~${Math.ceil(words / 305)} S.`; // kalibriert: 305 Wörter/Seite A5 (Quelldokument: 91 S. / ~27.600 Wörter)
 
   function infoFromFilename(filename) {
     const parts = filename.replace('.md', '').split('-');
@@ -583,6 +584,17 @@
     document.getElementById('view-editor') .addEventListener('click', () => setViewMode('editor'));
     document.getElementById('view-split')  .addEventListener('click', () => setViewMode('split'));
     document.getElementById('view-preview').addEventListener('click', () => setViewMode('preview'));
+
+    // Letzten Commit-Timestamp laden
+    apiRequest(`/repos/${OWNER}/${REPO}/commits?per_page=1`)
+      .then(commits => {
+        if (commits && commits[0]) {
+          const d = new Date(commits[0].commit.committer.date);
+          const pad = n => String(n).padStart(2, '0');
+          document.getElementById('version-ts').textContent =
+            `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+        }
+      }).catch(() => {});
 
     try {
       const files = await fetchChapterList();
