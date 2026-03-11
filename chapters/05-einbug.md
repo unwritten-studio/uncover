@@ -7,7 +7,7 @@
 
 Was geschieht, wenn eine literarische Figur die Grenzen ihrer Geschichte durchbricht und in unsere Welt tritt?
 
-Theresa Hannig ist eine Autorin, die sich nicht nur in der literarischen Welt einen Namen gemacht hat, sondern auch im Bereich der digitalen Innovation wagt. Ihr Roman „Pantopia" hat große Aufmerksamkeit erregt – sogar die Süddeutsche Zeitung widmete ihm einen ausführlichen Artikel. In diesem visionären Werk entfaltet sich das Bild einer vernetzten, globalen Gesellschaft, die von Technologie durchdrungen und von der menschlichen Sehnsucht nach Gerechtigkeit getrieben ist.
+Theresa  ist eine Autorin, die sich nicht nur in der literarischen Welt einen Namen gemacht hat, sondern auch im Bereich der digitalen Innovation wagt. Ihr Roman „Pantopia" hat große Aufmerksamkeit erregt – sogar die Süddeutsche Zeitung widmete ihm einen ausführlichen Artikel. In diesem visionären Werk entfaltet sich das Bild einer vernetzten, globalen Gesellschaft, die von Technologie durchdrungen und von der menschlichen Sehnsucht nach Gerechtigkeit getrieben ist.
 
 Doch die Geschichte endet nicht auf den letzten Seiten des Buches. Einbug, die zentrale Figur aus „Pantopia", hat einen bemerkenswerten Sprung gewagt: aus der Fiktion hinein in die digitale Realität. Als Chatbot bei unwritten aktiv geworden, verwandelt sich die literarische Gestalt in einen interaktiven Begleiter, eine Brücke zwischen erdachter und gelebter Welt, die nun selbst von ihrer Entstehung berichten kann.
 
