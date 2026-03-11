@@ -9,7 +9,7 @@ Es begann wie immer mit einer Gewissheit, die schon im nächsten Satz wieder zer
 
 Als er den Verlag O'Reilly gründete, war Bernhard bei Lehmanns einer der ersten Kunden. Nicht aus Romantik, sondern aus Pragmatismus: Unix. Dieselbe Kommandozeile, dieselbe Haltung zur Welt. Anfang der Neunziger kam er nach Berlin, und Berlin war noch roh genug, um Zukunft zu versprechen. Sie zogen durch die Stadt, lachten zu laut, trugen diese frühe digitale Euphorie wie einen schlecht sitzenden Mantel. Michael Paschkes allererste digitale Kamera, ein unförmiges Versprechen mit Linse, hielt sie fest. Beweisfotos einer Zeit, die später niemand mehr genau so erinnern würde.
 
-Später dann Gerd Miske. Köln. Lehmanns. Lieblingskollege von mir und Tim. Abgeworben für den Verlag. Freundschaft als Personalstrategie, Loyalität als Kollateralschaden. Widersprüche waren nie ein Bug, sondern Feature.
+Später dann Gerd aus Köln. Auch Lehmanns. Lieblingskollege von mir und Tim. Abgeworben für den Verlag. Freundschaft als Personalstrategie, Loyalität als Kollateralschaden. Widersprüche waren nie ein Bug, sondern Feature.
 
 Tim wünscht sich einen Austausch. Ganz allgemein. Setting offen. Erstmal vorstellen: Produkt, Team, Vision. Dann schauen, wohin die Reise geht. Reisen waren immer das Problem. Man fuhr los, ohne zu wissen, ob man ankam oder nur besser scheiterte.
 
