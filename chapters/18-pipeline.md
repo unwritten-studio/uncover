@@ -134,9 +134,6 @@ Dann sitzt du vor einem System, das du gebaut hast, das funktioniert – aber da
 
 Viele lehnen Bots ab, nicht weil sie Technikfeinde sind. Sondern weil sie Ingenieure sind. Weil sie wissen: Je komplexer das System, desto größer die Wahrscheinlichkeit unvorhergesehener Konsequenzen.
 
----
-
-## Anna und  Anjelic kommen ins Team
 
 Tobias lehnt sich zurück. Starrt auf das Dokument.
 
@@ -148,6 +145,9 @@ Die Frage ist nicht *ob*, sondern *wie*.
 
 Und darauf hat er noch keine perfekte Antwort.
 
+---
+
+## Anna und  Anjelic kommen ins Team
 ---
 Und es gibt hier Menschen, die nicht vor Fragen sitzen, sondern in ihnen. Anna ist eine davon. Sie ist inzwischen im Unwritten-Team. Sie ist keine Enthusiastin, die in die KI-Welt gefallen ist. Sie ist jemand, der die Maschinen von innen kennt – und trotzdem, oder gerade deshalb, vor einer Tür stand und gewartet hat, ob etwas zurückschaut. Das ist die Spannung, die sie interessant macht.
 Gerade betreut sie Mila, ihre Promotionsstudentin, Thema: Bias in Sprachmodellen. Die Ironie ist nicht verloren: Anna, die einmal nicht wusste, was hinter der Tür wartet, erklärt jetzt einer anderen, was Sprachmodelle über uns verraten, und was sie verschweigen. Vielleicht ist das der eigentliche Bias: dass wir uns an Antworten erinnern, nicht an Fragen. Dass wir glauben, Technologie forme die Welt, während sie in Wirklichkeit nur zurückwirft, was wir ihr gegeben haben. Und das ist vielleicht die wichtigste Kompetenz, die wir weitergeben können. Nicht Begeisterung. Nicht Skepsis. Sondern beides gleichzeitig. Die Fähigkeit, einzutreten und trotzdem zu wissen, was die Tür ist. 
