@@ -29,5 +29,7 @@ Dies ist nicht die Zukunft der KI. Dies ist die Zukunft der Geschichten. Und die
 Dafür gibt es einen Namen aus der KI-Forschung: „Team Human × AI". Nicht als Slogan, sondern als Arbeitsmodell. Der Bot übernimmt die Dinge, die Maschinen gut können: präsent sein, verfügbar sein, 24/7 zuhören. Damit hat der Mensch wieder Zeit für das, das nur Menschen können: Urteil, Verantwortung, echte Kreativität.
 
 Fortschritt entsteht nicht aus Geschwindigkeit, sondern aus Disziplin. Aus Aufmerksamkeit statt Lautstärke.
+Die Zukunft gehört nicht der KI.
+Sie gehört den Teams, die wissen, wie man sie richtig einsetzt.
 
 Die Zukunft ist unwritten. Und sie ist bereit für diejenigen, die Zeit haben zuzuhören.
