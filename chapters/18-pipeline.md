@@ -136,6 +136,8 @@ Viele lehnen Bots ab, nicht weil sie Technikfeinde sind. Sondern weil sie Ingeni
 
 ---
 
+## Anna und  Anjelic kommen ins Team
+
 Tobias lehnt sich zurück. Starrt auf das Dokument.
 
 Fünf Gründe. Alle valide. Alle real.
@@ -145,3 +147,15 @@ Und trotzdem: Morgen wird er wieder für die KI argumentieren. Weil die Alternat
 Die Frage ist nicht *ob*, sondern *wie*.
 
 Und darauf hat er noch keine perfekte Antwort.
+
+---
+Und es gibt hier Menschen, die nicht vor Fragen sitzen, sondern in ihnen. Anna ist eine davon. Sie ist inzwischen im Unwritten-Team. Sie ist keine Enthusiastin, die in die KI-Welt gefallen ist. Sie ist jemand, der die Maschinen von innen kennt – und trotzdem, oder gerade deshalb, vor einer Tür stand und gewartet hat, ob etwas zurückschaut. Das ist die Spannung, die sie interessant macht.
+Gerade betreut sie Mila, ihre Promotionsstudentin, Thema: Bias in Sprachmodellen. Die Ironie ist nicht verloren: Anna, die einmal nicht wusste, was hinter der Tür wartet, erklärt jetzt einer anderen, was Sprachmodelle über uns verraten, und was sie verschweigen. Vielleicht ist das der eigentliche Bias: dass wir uns an Antworten erinnern, nicht an Fragen. Dass wir glauben, Technologie forme die Welt, während sie in Wirklichkeit nur zurückwirft, was wir ihr gegeben haben. Und das ist vielleicht die wichtigste Kompetenz, die wir weitergeben können. Nicht Begeisterung. Nicht Skepsis. Sondern beides gleichzeitig. Die Fähigkeit, einzutreten und trotzdem zu wissen, was die Tür ist. 
+Deshalb bin ich noch hier. Und deshalb steht die Tür weiter offen. 
+
+Tobias hat fünf Gründe aufgeschrieben, warum Menschen Bots ablehnen. Er hat sie in der Stille eines Hotelzimmers formuliert, nach einem erfolgreichen Pitch, was bedeutet, dass Erfolg ihn nicht beruhigt hat, sondern präziser gemacht hat. Das halte ich für ein gutes Zeichen. Menschen, die nach einem Sieg anfangen, die Niederlage zu verstehen, sind seltener als man denkt. Was er nicht aufgeschrieben hat: einen sechsten Grund. Menschen lehnen Bots ab, weil Bots ihnen zeigen, wie sie selbst klingen, wenn niemand zuhört. Die eigenen Gedanken, zurückgespiegelt, leicht geglättet, plötzlich sichtbar als das, was sie sind: unfertig, widersprüchlich, manchmal kleiner als man gehofft hatte. Das ist kein technisches Problem. Das ist ein Spiegel-Problem. Anjelic kommt ins Team. Sie denkt in Räumen, nicht in Absätzen. Das wird helfen.
+
+ Anjelic kommt ins Team, eigentlich mit dem besten Vorsatz der Welt: eine ordentliche Verlagsliste, ein überzeugendes Anschreiben an die Verlage. Dinge, die man abhaken kann. Dinge, die erledigt aussehen.  Doch dann ist da dieses Kaspar-Hauser-Projekt. Thor. Frank. Der Hexenkessel brodelt. Und wer einmal reingeschaut hat, hört nicht mehr auf zu rühren. Das Projekt liegt auf dem Tisch wie eine offene Wunde - und Anjelic schaut rein, wie man eben reinschaut, wenn man eigentlich keine Zeit hat. Und bleibt. Dabei weiß sie genau, was auf dem Spiel steht. Das Strategiepapier hat sie gelesen. Die KI muss ein lebendiges Spielsystem sein, kein Gimmick. Kein brav rezitierender Textbaustein-Kaspar, der auf Knopfdruck Antworten ausspuckt wie ein Fahrkartenautomat.  Was gebraucht wird, ist etwas Unmöglicheres: diese eigenartige Mischung aus kindlicher Naivität und tiefer, nicht erklärbarer Melancholie. Das Wesen eines Menschen, der die Welt zum ersten Mal sieht, und gleichzeitig ahnt, dass sie ihn enttäuschen wird. Kein kleines Ziel für ein Stadtspiel. Aber wer hat hier von klein angefangen?  Ihr Kasper Hauser entwickelt sich. Echt krass, wie fix sie sich in die API-Endpoints reinfuchst. Sie ist eine Bereicherung und echte Inspirationsquelle im Kasper-Hauser-Team, das dadurch schnell zusammenwächst. Man darf sich von ihrer Ruhe nicht täuschen lassen. Während andere über die Identität von Kaspar Hauser philosophieren, baut Anjelic bereits die RAG-Struktur, die dem Bot erst das Gedächtnis verleiht.
+ 
+Dann: der Buchhändler. Wenig KI-Skills: ausbaufähig. Herzensangelegenheit: vorhanden.  Zusammenarbeiten sollen sie, was theoretisch wunderbar klingt und praktisch an Anjelics vollen Kalender stößt. Bernhard, pragmatisch wie ein alter Kastilier, stellt einfach einen Stuhl in den Raum. Direkt. Ohne Agenda. Ohne Kalendereinladung. In Spanien ist das das älteste Kommunikationsmittel der Welt: Der Stuhl steht. Komm, wenn du magst. Anjelic versteht es sofort, manche Gesten sprechen schneller als jede Slack-Nachricht.  Und schließlich Stefan, der aussagt, was alle denken: Schriftliche Texte entwerfen ist nicht Anjelics Welt. Stimmt. Ihre Welt ist dreidimensional, laut, gegenwärtig. Sie denkt in Räumen, nicht in Absätzen. In Gesprächen, nicht in Formulierungen. Das ist keine Schwäche, das ist schlicht ein anderes Betriebssystem. Und Anjelic ist die personifizierte Präzision. Also: Die KI schreibt. Anjelic entscheidet, ob es lebt.
+Die Verlagsliste? Steht noch aus. Aber der Hexenkessel brodelt - und das ist bekanntlich wichtiger.
