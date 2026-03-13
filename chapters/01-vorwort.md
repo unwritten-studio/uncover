@@ -10,7 +10,7 @@ Ein Buch über das eigene Startup zu schreiben, ist die ultimative Form der Refl
 
 ## Warum jetzt? Warum überhaupt?
 
-Frank stellt die Frage, die am meisten weh tut: „Was wird der Buchhandel damit anfangen?" Die Antwort ist ehrlich: Das ist nicht die erste Frage, die du dir stellen solltest. Die erste Frage lautet: Was wird dein Team damit anfangen? Was wird die Welt damit anfangen, die nicht in deinem Büro sitzt, aber von den Dingen erfährt, die du glaubst? Ein Buch über dein Startup ist nicht in erster Linie ein Produkt für den Buchhandel. Es ist ein Werkzeug für etwas Tiefergehendes:
+Das Wichtigste: Wir schreiben auf, was wir kontrollieren wollen. Aber die echte Ordnung entsteht in dem, was wir nicht aufschreiben. Und Frank stellt die Frage, die am meisten weh tut: „Was wird der Buchhandel damit anfangen?" Die Antwort ist ehrlich: Das ist nicht die erste Frage, die du dir stellen solltest. Die erste Frage lautet: Was wird dein Team damit anfangen? Was wird die Welt damit anfangen, die nicht in deinem Büro sitzt, aber von den Dingen erfährt, die du glaubst? Ein Buch über dein Startup ist nicht in erster Linie ein Produkt für den Buchhandel. Es ist ein Werkzeug für etwas Tiefergehendes:
 
 **Für Gründer und Teams:** Ein Buch dokumentiert nicht nur, was ihr gemacht habt, es zeigt warum ihr es gemacht habt, und das ist die einzige Information, die wirklich zählt. Es ist eine Anleitung für künftige Entscheidungen. Es ist eine Verfestigung der Kultur, nicht während ihr sie noch erfinden, sondern während ihr sie lebt. Und das ist entscheidend: Ein Buch geschrieben von innen heraus, während die Geschichte noch läuft, hat eine Authentizität, die keine Retrospektive je erreichen wird.
 
