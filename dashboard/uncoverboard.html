@@ -176,8 +176,10 @@
 
     <!-- Sidebar -->
     <aside class="w-64 bg-brand-grey border-r border-gray-200 flex flex-col overflow-hidden flex-shrink-0">
-      <div class="px-4 py-3 border-b border-gray-200">
+      <div class="px-4 py-3 border-b border-gray-200 flex items-center justify-between">
         <p class="text-xs uppercase tracking-wider text-gray-400 font-medium">Kapitel</p>
+        <button id="new-chapter-btn" title="Neues Kapitel anlegen"
+          class="text-gray-400 hover:text-brand-blue transition-colors text-base leading-none">＋</button>
       </div>
       <div class="flex-1 overflow-y-auto" id="chapter-list">
         <div class="p-4 text-sm text-gray-400">Laden…</div>
@@ -247,6 +249,41 @@
             Speichern
           </button>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── New chapter modal ──────────────────────────────────────────── -->
+  <div id="new-chapter-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 p-4">
+    <div class="bg-white rounded-lg p-6 w-full max-w-sm shadow-2xl">
+      <h3 class="font-medium mb-4">Neues Kapitel anlegen</h3>
+
+      <div class="flex gap-3 mb-3">
+        <div class="w-20 flex-shrink-0">
+          <label class="text-xs text-gray-400 block mb-1">Nummer</label>
+          <input type="number" id="nc-num" min="0" max="97"
+            class="w-full border border-gray-200 rounded px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-brand-blue/30">
+        </div>
+        <div class="flex-1">
+          <label class="text-xs text-gray-400 block mb-1">Titel</label>
+          <input type="text" id="nc-title" placeholder="Kapitelname…"
+            class="w-full border border-gray-200 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-brand-blue/30">
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <label class="text-xs text-gray-400 block mb-1">Dateiname</label>
+        <input type="text" id="nc-filename" placeholder="wird automatisch generiert"
+          class="w-full border border-gray-200 rounded px-3 py-2 text-sm font-mono text-gray-500 focus:outline-none focus:ring-2 focus:ring-brand-blue/30">
+      </div>
+
+      <p id="nc-error" class="text-xs text-red-400 mb-3 hidden"></p>
+
+      <div class="flex justify-end gap-2">
+        <button id="nc-cancel" class="text-sm text-gray-500 px-4 py-2 hover:text-gray-700">Abbrechen</button>
+        <button id="nc-create" class="text-sm bg-brand-blue text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+          Anlegen
+        </button>
       </div>
     </div>
   </div>
@@ -565,9 +602,108 @@
     }
   }
 
+  // ── New chapter ───────────────────────────────────────────────────────────
+  function slugify(title) {
+    return title.toLowerCase()
+      .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+  }
+
+  function nextChapterNum() {
+    const used = new Set(
+      state.chapters
+        .map(c => parseInt(c.name))
+        .filter(n => !isNaN(n) && n < 98)
+    );
+    for (let i = 1; i <= 97; i++) { if (!used.has(i)) return i; }
+    return 28;
+  }
+
+  function openNewChapterModal() {
+    const num = nextChapterNum();
+    document.getElementById('nc-num').value      = num;
+    document.getElementById('nc-title').value    = '';
+    document.getElementById('nc-filename').value = '';
+    document.getElementById('nc-error').classList.add('hidden');
+    document.getElementById('nc-create').textContent = 'Anlegen';
+    document.getElementById('nc-create').disabled    = false;
+    document.getElementById('new-chapter-modal').classList.remove('hidden');
+    document.getElementById('nc-title').focus();
+  }
+
+  function closeNewChapterModal() {
+    document.getElementById('new-chapter-modal').classList.add('hidden');
+  }
+
+  function updateNewChapterFilename() {
+    const num   = String(document.getElementById('nc-num').value).padStart(2, '0');
+    const title = document.getElementById('nc-title').value.trim();
+    const slug  = slugify(title);
+    document.getElementById('nc-filename').value = slug ? `${num}-${slug}.md` : '';
+  }
+
+  async function createNewChapter() {
+    if (!state.token) { closeNewChapterModal(); openTokenModal(); return; }
+
+    const num      = parseInt(document.getElementById('nc-num').value);
+    const title    = document.getElementById('nc-title').value.trim();
+    const filename = document.getElementById('nc-filename').value.trim();
+    const errEl    = document.getElementById('nc-error');
+
+    errEl.classList.add('hidden');
+
+    if (!title)    { errEl.textContent = 'Titel fehlt.'; errEl.classList.remove('hidden'); return; }
+    if (!filename || !filename.endsWith('.md')) {
+      errEl.textContent = 'Ungültiger Dateiname.'; errEl.classList.remove('hidden'); return;
+    }
+    if (state.chapters.some(c => c.name === filename)) {
+      errEl.textContent = 'Dateiname existiert bereits.'; errEl.classList.remove('hidden'); return;
+    }
+
+    const btn = document.getElementById('nc-create');
+    btn.textContent = 'Erstelle…'; btn.disabled = true;
+
+    const initialContent = `# ${title}\n\n`;
+    const filePath       = `${CHAPTERS_PATH}/${filename}`;
+
+    try {
+      const result = await apiRequest(`/repos/${OWNER}/${REPO}/contents/${filePath}`, {
+        method: 'PUT',
+        body: JSON.stringify({ message: `Neu: ${title}`, content: toBase64(initialContent) }),
+      });
+
+      const newChapter = {
+        name: filename, path: filePath,
+        sha:  result.content.sha,
+        title, words: 0, content: initialContent,
+      };
+
+      // Einsortieren nach Dateiname
+      state.chapters.push(newChapter);
+      state.chapters.sort((a, b) => a.name.localeCompare(b.name));
+
+      closeNewChapterModal();
+      renderChapterList();
+      openChapter(newChapter);
+    } catch (err) {
+      errEl.textContent = `Fehler: ${err.message}`;
+      errEl.classList.remove('hidden');
+      btn.textContent = 'Anlegen'; btn.disabled = false;
+    }
+  }
+
   // ── Init ──────────────────────────────────────────────────────────────────
   async function init() {
     updateTokenUI(); initEditor(); setViewMode('editor');
+
+    document.getElementById('new-chapter-btn').addEventListener('click', openNewChapterModal);
+    document.getElementById('nc-cancel')      .addEventListener('click', closeNewChapterModal);
+    document.getElementById('nc-create')      .addEventListener('click', createNewChapter);
+    document.getElementById('nc-num')         .addEventListener('input', updateNewChapterFilename);
+    document.getElementById('nc-title')       .addEventListener('input', updateNewChapterFilename);
+    document.getElementById('nc-title')       .addEventListener('keydown', e => { if (e.key === 'Enter') createNewChapter(); if (e.key === 'Escape') closeNewChapterModal(); });
+    document.getElementById('new-chapter-modal').addEventListener('click', e => { if (e.target === e.currentTarget) closeNewChapterModal(); });
 
     document.getElementById('token-btn')   .addEventListener('click', openTokenModal);
     document.getElementById('token-cancel').addEventListener('click', closeTokenModal);
