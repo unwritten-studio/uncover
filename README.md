@@ -61,6 +61,16 @@ Das Ergebnis landet in `build/`. Voraussetzung: Pandoc und XeLaTeX installiert.
 
 ---
 
+## Dashboard
+
+**Uncoverboard** – Browser-Dashboard zum Lesen und Bearbeiten der Kapitel, direkt aus dem Browser heraus:
+
+→ [unwritten-studio.github.io/uncover/dashboard/uncoverboard.html](https://unwritten-studio.github.io/uncover/dashboard/uncoverboard.html)
+
+Kein Setup nötig. Zum Speichern einmalig einen GitHub Token eintragen (⚙ Token oben rechts).
+
+---
+
 ## Team
 
 [unwritten](https://unwritten.studio/) – Worte werden Welten.
