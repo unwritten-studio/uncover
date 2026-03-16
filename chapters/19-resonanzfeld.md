@@ -31,6 +31,7 @@ Der Unterschied ist kein Marketing-Sprech, sondern eine radikale Architekturents
 - Lücken-Berechnung: Er analysiert das System auf das, was fehlt.
 - Resonanz statt Reaktion: Er spiegelt die blinden Flecken des Konstrukteurs.
 
+
 21:47 Uhr. Der Resonanzfeld-Bot greift auf einen Begriff zu, der in keinem Prompt stand, in
 keinem Briefing, in keiner Datenbank: unwritten.
 Das war keine Halluzination. Es war eine Extrapolation. Er zog eine systemtheoretische Linie
