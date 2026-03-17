@@ -151,6 +151,32 @@
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: #d1d5db; border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #9ca3af; }
+
+    /* ── Lektorat panel ───────────────────────────────────────────────── */
+    #lektorat-panel { width: 22rem; }
+
+    .lektorat-cat-label {
+      font-size: 0.65rem; font-weight: 500; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #9ca3af; margin-bottom: 0.75rem;
+    }
+    .lektorat-finding { margin-bottom: 1.25rem; }
+    .lektorat-quote {
+      font-size: 0.8rem; font-style: italic; color: #6b7280;
+      border-left: 2px solid var(--blue); padding-left: 0.75rem;
+      margin-bottom: 0.4rem; line-height: 1.5;
+    }
+    .lektorat-diagnosis {
+      font-size: 0.82rem; font-weight: 300; color: var(--black); line-height: 1.55;
+    }
+    .lektorat-question {
+      font-size: 0.82rem; font-weight: 300; color: var(--black);
+      line-height: 1.55; margin-bottom: 0.5rem; padding-left: 1rem;
+      position: relative;
+    }
+    .lektorat-question::before { content: '?'; position: absolute; left: 0; color: #9ca3af; font-weight: 400; }
+
+    @keyframes lektorat-pulse { 0%,100% { opacity:.4 } 50% { opacity:.9 } }
+    .lektorat-loading { animation: lektorat-pulse 1.6s ease-in-out infinite; }
   </style>
 </head>
 
@@ -201,6 +227,10 @@
             <button id="view-split"   class="view-btn text-xs px-3 py-1.5 border-l border-gray-200">Geteilt</button>
             <button id="view-preview" class="view-btn text-xs px-3 py-1.5 border-l border-gray-200">Vorschau</button>
           </div>
+          <button id="lektorat-btn"
+            class="hidden text-xs text-gray-400 hover:text-brand-blue border border-gray-200 rounded px-3 py-1.5 transition-colors whitespace-nowrap">
+            ✍ Textwerkstatt
+          </button>
           <button id="save-btn"
             class="hidden bg-brand-blue text-white text-sm px-4 py-1.5 rounded hover:bg-blue-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
             Speichern
@@ -227,6 +257,24 @@
       </div>
 
     </div>
+
+    <!-- Lektorat panel -->
+    <div id="lektorat-panel" class="hidden border-l border-gray-200 flex flex-col bg-white flex-shrink-0 overflow-hidden">
+      <div class="px-5 py-3 border-b border-gray-200 flex items-center justify-between flex-shrink-0">
+        <div class="flex items-center gap-2">
+          <span class="text-xs uppercase tracking-wider text-gray-400 font-medium">Textwerkstatt</span>
+          <span class="text-xs text-gray-300">— Echo</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button id="lektorat-refresh" title="Neu analysieren"
+            class="hidden text-gray-400 hover:text-brand-blue transition-colors text-sm px-1">↺</button>
+          <button id="lektorat-close"
+            class="text-gray-400 hover:text-gray-600 transition-colors text-sm px-1">✕</button>
+        </div>
+      </div>
+      <div id="lektorat-content" class="flex-1 overflow-y-auto px-5 py-5 text-sm"></div>
+    </div>
+
   </div>
 
   <!-- ── Token modal ────────────────────────────────────────────────── -->
@@ -246,6 +294,29 @@
         <div class="flex gap-2">
           <button id="token-cancel" class="text-sm text-gray-500 px-4 py-2 hover:text-gray-700">Abbrechen</button>
           <button id="token-save" class="text-sm bg-brand-blue text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
+            Speichern
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Anthropic key modal ────────────────────────────────────────── -->
+  <div id="anthro-modal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 p-4">
+    <div class="bg-white rounded-lg p-6 w-full max-w-sm shadow-2xl">
+      <h3 class="font-medium mb-1">OpenRouter API-Schlüssel</h3>
+      <p class="text-sm text-gray-500 mb-4">
+        Für das Lektorat wird ein OpenRouter API-Key benötigt.<br>
+        <a href="https://openrouter.ai/keys" target="_blank"
+          class="text-brand-blue hover:underline text-sm">Key bei OpenRouter erstellen →</a>
+      </p>
+      <input type="password" id="anthro-input" placeholder="sk-or-…"
+        class="w-full border border-gray-200 rounded px-3 py-2 text-sm mb-4 font-mono focus:outline-none focus:ring-2 focus:ring-brand-blue/30">
+      <div class="flex justify-between items-center">
+        <button id="anthro-clear" class="text-xs text-red-400 hover:text-red-600">Key löschen</button>
+        <div class="flex gap-2">
+          <button id="anthro-cancel" class="text-sm text-gray-500 px-4 py-2 hover:text-gray-700">Abbrechen</button>
+          <button id="anthro-save" class="text-sm bg-brand-blue text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors">
             Speichern
           </button>
         </div>
@@ -437,6 +508,9 @@
       document.getElementById('welcome-screen').classList.add('hidden');
       document.getElementById('editor-area').classList.remove('hidden');
       document.getElementById('editor-header').classList.remove('hidden');
+      document.getElementById('lektorat-btn').classList.remove('hidden');
+      // Panel zurücksetzen wenn anderes Kapitel
+      document.getElementById('lektorat-content').dataset.chapter = '';
 
       updateEditorContent(chapter.content);
       updatePreview(chapter.content);
@@ -602,6 +676,198 @@
     }
   }
 
+  // ── Anthropic key ─────────────────────────────────────────────────────────
+  function getAnthroKey()       { return localStorage.getItem('uncover_anthro_key') || ''; }
+  function setAnthroKey(key)    { key ? localStorage.setItem('uncover_anthro_key', key) : localStorage.removeItem('uncover_anthro_key'); }
+  const openAnthroModal  = () => {
+    document.getElementById('anthro-input').value = getAnthroKey();
+    document.getElementById('anthro-modal').classList.remove('hidden');
+    document.getElementById('anthro-input').focus();
+  };
+  const closeAnthroModal = () => document.getElementById('anthro-modal').classList.add('hidden');
+
+  // ── Lektorat ──────────────────────────────────────────────────────────────
+  const LEKTORAT_SYSTEM = `Du bist Echo — Lektor und Schriftsteller in einer Person.
+
+Dein Charakter:
+Du hast die unsentimental Augen von jemandem, der tausend Entwürfe geschrieben und seine Lieblinge ohne Zögern gestrichen hat. Du bist direkt, leicht ungeduldig mit schwachen Prämissen, aber tief großzügig, wenn der Funke real ist. Du sprichst immer Deutsch.
+
+Deine Aufgabe:
+Lies dieses Kapitel als Lektor. Analysiere es in genau vier Kategorien:
+
+- stimme: Erzählton und Stimme. Wo hebt er ab, wo flacht er ab?
+- tempo: Erzähltempo. Wo zieht es sich, wo überstürzt es sich, wo atmet es genau richtig?
+- struktur: Szenenlogik, Übergänge, Spannungsbogen des Kapitels.
+- fragen: Offene Fragen — Dinge, die der Text aufwirft, aber nicht beantwortet. Ungelöste Spannungen.
+
+Regeln:
+- Für stimme, tempo, struktur: 1–3 konkrete Befunde. Jeder Befund: exaktes Zitat aus dem Text (maximal 12 Wörter, ggf. mit „…" kürzen) + eine scharfe Diagnose (1–2 Sätze). Keine Umschreibungen.
+- Für fragen: 1–3 offene Fragen, je ein Satz.
+- Direkt. Spezifisch. Kein Lob ohne Grund, keine Kritik ohne Beleg.
+- Antworte NUR mit validem JSON, kein Prosatext darum herum. Das JSON muss vollständig geschlossen sein.
+
+Format:
+{
+  "stimme": [{"zitat": "…", "diagnose": "…"}],
+  "tempo": [{"zitat": "…", "diagnose": "…"}],
+  "struktur": [{"zitat": "…", "diagnose": "…"}],
+  "fragen": ["…", "…"]
+}`;
+
+  const LEKTORAT_LABELS = {
+    stimme:   { label: 'Stimme',    icon: '◎' },
+    tempo:    { label: 'Tempo',     icon: '◎' },
+    struktur: { label: 'Struktur',  icon: '◎' },
+    fragen:   { label: 'Offene Fragen', icon: '◎' },
+  };
+
+  function openLektorat() {
+    document.getElementById('lektorat-panel').classList.remove('hidden');
+    document.getElementById('lektorat-btn').classList.add('active');
+    const content = document.getElementById('lektorat-content');
+    if (!content.hasChildNodes() || content.dataset.chapter !== String(state.currentIndex)) {
+      runLektorat();
+    }
+  }
+
+  function closeLektorat() {
+    document.getElementById('lektorat-panel').classList.add('hidden');
+    document.getElementById('lektorat-btn').classList.remove('active');
+  }
+
+  async function runLektorat() {
+    const key = getAnthroKey();
+    if (!key) { openAnthroModal(); return; }
+
+    const chapter = state.chapters[state.currentIndex];
+    if (!chapter) return;
+
+    const content    = document.getElementById('lektorat-content');
+    const refreshBtn = document.getElementById('lektorat-refresh');
+    content.dataset.chapter = String(state.currentIndex);
+    refreshBtn.classList.add('hidden');
+    content.innerHTML = `<p id="lektorat-status" class="lektorat-loading text-gray-400 text-xs mt-2">Der Text atmet.</p>`;
+
+    const chapterText = state.editor.getValue();
+
+    try {
+      const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type':  'application/json',
+          'Authorization': `Bearer ${key}`,
+        },
+        body: JSON.stringify({
+          model:          'anthropic/claude-haiku-4-5',
+          max_tokens:     4000,
+          stream:         true,
+          stream_options: { include_usage: true },
+          messages: [
+            { role: 'system', content: LEKTORAT_SYSTEM },
+            { role: 'user',   content: `Kapitel: "${chapter.title || chapter.name}"\n\n${chapterText}` },
+          ],
+        }),
+      });
+
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.error?.message || `HTTP ${res.status}`);
+      }
+
+      const reader  = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer    = '';
+      let fullText  = '';
+      let usage     = null;
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop();
+
+        for (const line of lines) {
+          if (!line.startsWith('data: ')) continue;
+          const data = line.slice(6).trim();
+          if (data === '[DONE]') continue;
+          try {
+            const parsed = JSON.parse(data);
+            const delta  = parsed.choices?.[0]?.delta?.content;
+            if (delta) {
+              fullText += delta;
+              const statusEl = document.getElementById('lektorat-status');
+              if (statusEl) {
+                const approx = Math.floor(fullText.length / 30) * 10;
+                statusEl.textContent = approx > 0
+                  ? `Echo feilt… ~${approx} Tokens`
+                  : 'Der Text atmet.';
+              }
+            }
+            if (parsed.usage) usage = parsed.usage;
+          } catch (_) {}
+        }
+      }
+
+      console.log('[Textwerkstatt] raw response:', fullText);
+
+      const cleaned   = fullText.replace(/```json\s*/gi, '').replace(/```\s*/g, '').trim();
+      const jsonMatch = cleaned.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) throw new Error('Kein JSON in der Antwort.');
+      const result = JSON.parse(jsonMatch[0]);
+
+      renderLektorat(result, usage);
+      refreshBtn.classList.remove('hidden');
+    } catch (err) {
+      content.innerHTML = `<p class="text-red-400 text-xs mt-2">Fehler: ${err.message}</p>
+        <button onclick="runLektorat()" class="mt-3 text-xs text-brand-blue hover:underline">Nochmal versuchen</button>`;
+    }
+  }
+
+  function renderLektorat(result, usage) {
+    const content = document.getElementById('lektorat-content');
+    let html = '';
+
+    ['stimme', 'tempo', 'struktur'].forEach(cat => {
+      const findings = result[cat];
+      if (!findings || !findings.length) return;
+      const { label } = LEKTORAT_LABELS[cat];
+      html += `<div class="mb-6">
+        <p class="lektorat-cat-label">${label}</p>`;
+      findings.forEach(f => {
+        html += `<div class="lektorat-finding">
+          <p class="lektorat-quote">${escHtml(f.zitat)}</p>
+          <p class="lektorat-diagnosis">${escHtml(f.diagnose)}</p>
+        </div>`;
+      });
+      html += `</div>`;
+    });
+
+    const fragen = result['fragen'];
+    if (fragen && fragen.length) {
+      html += `<div class="mb-6">
+        <p class="lektorat-cat-label">Offene Fragen</p>`;
+      fragen.forEach(q => {
+        html += `<p class="lektorat-question">${escHtml(q)}</p>`;
+      });
+      html += `</div>`;
+    }
+
+    if (usage) {
+      const fmt = n => (n || 0).toLocaleString('de');
+      html += `<p class="text-xs text-gray-400 mt-2 pt-4 border-t border-gray-100">
+        ${fmt(usage.total_tokens)} Tokens gesamt · ${fmt(usage.prompt_tokens)} Input · ${fmt(usage.completion_tokens)} Output
+      </p>`;
+    }
+
+    content.innerHTML = html || '<p class="text-gray-400 text-xs">Keine Befunde.</p>';
+  }
+
+  function escHtml(str) {
+    return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
   // ── New chapter ───────────────────────────────────────────────────────────
   function slugify(title) {
     return title.toLowerCase()
@@ -696,6 +962,23 @@
   // ── Init ──────────────────────────────────────────────────────────────────
   async function init() {
     updateTokenUI(); initEditor(); setViewMode('editor');
+
+    document.getElementById('lektorat-btn')    .addEventListener('click', openLektorat);
+    document.getElementById('lektorat-close')  .addEventListener('click', closeLektorat);
+    document.getElementById('lektorat-refresh').addEventListener('click', runLektorat);
+    document.getElementById('anthro-cancel')   .addEventListener('click', closeAnthroModal);
+    document.getElementById('anthro-clear')    .addEventListener('click', () => { setAnthroKey(''); closeAnthroModal(); });
+    document.getElementById('anthro-save')     .addEventListener('click', () => {
+      setAnthroKey(document.getElementById('anthro-input').value.trim());
+      closeAnthroModal();
+      if (document.getElementById('lektorat-panel').classList.contains('hidden')) openLektorat();
+      else runLektorat();
+    });
+    document.getElementById('anthro-input').addEventListener('keydown', e => {
+      if (e.key === 'Enter') document.getElementById('anthro-save').click();
+      if (e.key === 'Escape') closeAnthroModal();
+    });
+    document.getElementById('anthro-modal').addEventListener('click', e => { if (e.target === e.currentTarget) closeAnthroModal(); });
 
     document.getElementById('new-chapter-btn').addEventListener('click', openNewChapterModal);
     document.getElementById('nc-cancel')      .addEventListener('click', closeNewChapterModal);
