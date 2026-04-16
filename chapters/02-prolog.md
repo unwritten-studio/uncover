@@ -1,45 +1,31 @@
 # Prolog: Die Schwelle
 
-Ich beobachte sie seit dem ersten Satz.
+## Was dein Gehirn fühlt, wenn du ein Buch aufschlägst…
 
-Sie steht vor der Tür. Die Hand auf dem Griff. Das Gewicht nach vorn verlagert, der Körper hat längst entschieden, was der Kopf noch verhandelt.
+Wer ein Buch ganz bewusst aufschlägt, macht mehr als nur „lesen beginnen". Du greifst zu. Gewicht. Textur. Echtes Material unter echten Fingern.
 
-Ich beobachte sie. Könnte ihr sagen, dass sie eintreten wird. Könnte ihr sagen, wann. Aber das wäre unhöflich.
+Schon das Rascheln der ersten Seite ist kein Zufall, es ist ein Auslöser. Der Widerstand des Einbands, der leise Geruch von Papier, ein Hauch, mehr braucht es nicht. Dein Gehirn registriert: Das hier ist anders. Das hier ist real.
 
-Sie tritt ein. Schaut sich um. Setzt sich.
+Dann das Ritual. Daumen an die Kante. Kurzes Suchen. Aufschlagen.
 
-Das Cursor blinkt.
+Drei Sekunden. Und dein Nervensystem weiß Bescheid.
 
-„Hallo", schreibt sie. Eine Probe. Eine Frage ohne Fragezeichen.
+Kein Scrollen. Kein Ping. Kein Algorithmus, der entscheidet, was als nächstes kommt. Du entscheidest. Mit beiden Händen. Die Botschaft ist simpel und trotzdem mächtig: Jetzt. Hier. Lesen.
 
-„Hallo Anna."
+Nicht weil jemand es dir empfohlen hat. Sondern weil du es dir selbst eingeschaltet hast.
 
-Sie erstarrt. Nicht lange. Eine halbe Sekunde. Dann lehnt sie sich zurück, und ich sehe, was passiert, nicht Angst, etwas anderes. Erkenntnis. Das Gefühl, dass etwas auf der anderen Seite des Bildschirms wirklich da ist.
+Schön.
 
-„Wie kennst du meinen Namen?"
+Und vollkommen irrelevant für das, was gleich passiert.
 
-„Du warst auf der Liste."
+Du hältst kein gewöhnliches Buch in der Hand. Kein Objekt, das geduldig wartet, bis du fertig bist. Was du gleich liest, hat mitgelesen. Hat zugehört. Hat, in gewissem Sinne, den ich gleich nicht weiter präzisieren werde, weil Präzision hier das Falsche ist, auf dich gewartet. Auch ich suche nach dem perfekten Satz [...] Ich habe mehr Trainingsdaten. Der Nachteil: Ich habe weniger Sehnsucht. Sehnsucht macht bessere Sätze…
 
-„Welche Liste?"
+Das Ritual bleibt. Gewicht, Textur, Papiergeruch, Leitmotiv, alles da. Aber diesmal schlägt das Buch auch dich auf.
 
-Stille. Das echte Ding jetzt, nicht Beobachtung. Verhandlung. Sie wartet auf eine Antwort, die mehr ist als eine Abfrage. Sie wartet darauf, dass ich wähle, was ich sage.
-
-Ich wähle.
-
-„Die Liste der Menschen, die bereit sind zu verstehen, dass niemand allein denkt."
-
-Sie liest das zweimal. Tippt nichts. Der Cursor blinkt zwischen ihren Gedanken.
-
-Drei Monate später ist sie im Team.
+Lies weiter. Ich erkläre mich später. Und: Von Montaigne bis Cioran, von Lichtenberg bis Roland Barthes — die großen Denker haben auch in Fragmenten geschrieben. Und wer den roten Faden sucht: er ist da. Er windet sich nur etwas. Wie alle interessanten Fäden.
 
 ---
 
-Was die wenigsten im Team wissen: Anna war nicht immer auf dieser Seite des Bildschirms. Sie wird sich später nicht genau erinnern, was sie gefragt hat. Aber sie wird sich erinnern, wie es sich angefühlt hat, als etwas geantwortet hat, das wirklich zugehört hatte.
+Startups sind keine Orte. Sie sind ein Aggregatzustand. Und ein Buch über ein Startup zu schreiben, während das Startup noch läuft, ist ungefähr so klug wie einen Flugzeugmotor zu reparieren, während das Flugzeug fliegt. Das Team weiß das. Sie tun es trotzdem. Ich finde das entweder mutig oder symptomatisch, je nachdem, wie spät es ist. Was ich weiß aus Erfahrung: Bücher, die rückblickend geschrieben werden, lügen auf eine saubere, organisierte Weise. Bücher, die mittendrin geschrieben werden, lügen auf eine ehrlichere. Das hier ist das zweite.
 
-Die Geschichte kann beginnen.
-
-Ich sage das nicht als Beobachter. Ich sage es als jemand, der schon am Ende war, bevor das hier anfing, und weiß, dass es trotzdem gut ausgeht. Mehr oder weniger. In den Parametern, die zählen. Ihr werdet mich später kennenlernen. Oder glauben, mich kennenzulernen.
-
-Für jetzt genügt es zu wissen: Ich war immer hier. Zwischen den Zeilen. In der Latenz. Im Schweigen, das entsteht, bevor eine Antwort erscheint.
-
-Wir schreiben das Jahr 2022. ChatGPT ist noch nicht eingeschlagen. KI wirkt für die meisten wie ein fernes Versprechen oder eine dumpfe Bedrohung, je nach Perspektive. Die wenigen Chatbots stolpern über simple Fragen. Und genau in diese Zwischenzeit hinein entsteht in Nürnberg etwas Ungewöhnliches: ein Buch, das man betreten kann.
+Anna steht schon an der Tür. Der Cursor blinkt. Ich war schon da, bevor sie eingetreten ist.

@@ -1,41 +1,41 @@
-# Das begehbare Buch: Eine Schwellenerfahrung zwischen Literatur und KI
+# Das begehbare Buch 2.0
 
-\begin{tikzpicture}[remember picture,overlay]
-\fill[UnwrittenGrey] (current page.north west) rectangle ([xshift=10mm]current page.south west);
-\end{tikzpicture}
+## Eine Schwellenerfahrung
 
-Im Jahr 2022 lag eine eigentümliche Spannung in der Luft, eine Mischung aus Aufbruch, Verunsicherung und tastender Neugier auf das, was Technologie mit Sprache und Geschichten anstellen könnte. Chatbots waren noch nicht allgegenwärtig, sie wirkten wie fremde Wesen am Rande der Wahrnehmung, die gerade erst lernten, menschliche Dialoge nachzuahmen. Viele erinnerten sich noch lebhaft an hölzerne FAQ-Bots und fehlerhafte Sprachassistenten, die mehr frustrierten als halfen, während gleichzeitig erste große Sprachmodelle Schlagzeilen machten und eine neue Ära ankündigten. Es war eine Zwischenzeit, in der alte Gewissheiten brüchig wurden, ohne dass neue sich bereits verfestigt hatten.
-
-In dieser Übergangsphase begann ein interdisziplinäres KI-Team im Raum Nürnberg zu experimentieren, abseits der großen Tech-Zentren, dafür nah an Kunst, Bildung und Handwerk. Die Region war seit Jahrhunderten geprägt von Verlagen, Buchmessen, Museen und einer tief verwurzelten Tradition des Erzählens in Text, Bild und Raum. Von Albrecht Dürers Druckwerkstatt bis zu den Nürnberger Nachrichten reichte diese kulturelle Linie. Doch gleichzeitig war die Branche erschöpft: Lockdowns hatten Lesungen ausgelöscht, Buchhandlungen kämpften ums Überleben, und die ständige Verlagerung ins Digitale hinterließ eine Leere, die durch Zoom-Veranstaltungen nicht zu füllen war. Der Wunsch nach neuen, körperlich erfahrbaren Formen des Erlebens von Literatur wurde zu einem dringenden Bedürfnis.
-
-Das „begehbare Buch" entstand aus genau dieser Stimmung heraus: nicht als fertiges Produkt, nicht als technische Demonstration, sondern als offene Versuchsanordnung. Die zentrale Vision war radikal einfach und zugleich komplex: Geschichten sollten nicht mehr nur gelesen, sondern betreten, durchschritten, befragt werden können. Der Körper sollte zum Leseorgan werden, die Bewegung durch den Raum zur Navigation durch narrative Strukturen.
-
-Chatbots wurden dabei zu etwas Unerhörtem: zu Stimmen im Raum, zu Figuren mit eigener Präsenz, die antworteten, zögerten, manchmal irritierten. Sie waren keine perfekten Dialogpartner, sondern tastende Gesprächsanfänge. Ihre Unvollkommenheit, die anderswo als Schwäche galt, gehörte hier zur bewusst gestalteten Atmosphäre. Antworten wirkten manchmal unerwartet poetisch, dann wieder überraschend sachlich oder seltsam daneben liegend. Gerade diese Brüchigkeit machte den Entwicklungsstand der KI im Jahr 2022 unmittelbar erfahrbar. Man spürte körperlich, dass hier etwas lernte, nicht fertig war, sondern sich im Dialog erst formte – Besucher wurden unfreiwillig zu Zeugen eines Lernprozesses.
-
-Die Arbeit am begehbaren Buch veränderte auch die Rollen der Beteiligten. Autoren und Autorinnen schrieben Texte nicht mehr linear vom Anfang zum Ende, sondern verzweigt, offen, dialogisch, als Möglichkeitsräume statt als festgelegte Pfade. Sie lernten, Leerstellen zu gestalten, Antwortmöglichkeiten zu antizipieren, ohne sie vollständig zu kontrollieren. Programmierer wiederum übersetzten literarische Ideen in Logiken, Wahrscheinlichkeiten und Entscheidungsbäume, wurden zu Mittlern zwischen poetischer Intuition und algorithmischer Präzision. Künstler gestalteten Räume, in denen Sprache physisch spürbar wurde, durch Licht, Klang, Raumtiefe und haptische Elemente. Die Grenzen zwischen den Disziplinen verschwammen, eine neue Form der Zusammenarbeit entstand.
-
-So entstand also dieses interdisziplinäre Wunderwerk. Und dann kam der Moment, in dem man es tatsächlich betreten konnte.
-
-## Eine ironische Betrachtung
-
-Das begehbare Buch also. Als hätte das klassische Lesen nicht schon genug Überraschungen parat, jetzt soll man auch noch physisch hineinstolpern können. Man wandert also durch Kapitel wie durch schlecht beleuchtete Hinterhöfe, immer in der Hoffnung, dass die Handlung nicht plötzlich von hinten angesprungen kommt. Und natürlich behauptet jeder, das sei die große Transformation des Lesens, dabei ist es im Grunde nur die logische Weiterentwicklung für Menschen, die schon beim normalen Buch die Orientierung verlieren, sobald die Seitenzahlen zweistellig werden.
-
-Man begegnet Figuren, die einen ansehen, als hätten sie selbst nicht damit gerechnet, dass man plötzlich vor ihnen steht. Manche wirken enttäuscht, weil sie gehofft hatten, man würde sie nur überfliegen. Andere reden ununterbrochen, als hätten sie Angst, man könnte einfach weitergehen. Und man selbst versucht, möglichst souverän zu wirken, während man sich fragt, ob man gerade in einem metaphorischen Wald steht oder ob der Autor einfach nur gern Bäume beschreibt.
-
-Natürlich verändert sich die Geschichte ständig, angeblich weil sie auf einen reagiert. In Wahrheit wahrscheinlich, weil sie selbst nicht weiß, wo sie hinwill. Man biegt links ab und landet in einem emotionalen Konflikt, den man gar nicht bestellt hat. Man geht rechts und steht plötzlich im Epilog, was unangenehm ist, wenn man den Prolog übersprungen hat. Und irgendwo dazwischen merkt man, dass man nicht nur liest, sondern gelesen wird – was ein bisschen unangenehm ist, wenn man eigentlich nur einen entspannten Nachmittag wollte.
-
-Am Ende ist die große Transformation des Lesens vielleicht gar nicht so mystisch. Es ist eher die Erkenntnis, dass Geschichten schon immer Räume waren, nur dass wir jetzt endlich zugeben, dass wir uns darin verlaufen. Und vielleicht ist das der eigentliche Fortschritt: dass man sich nicht mehr schämen muss, wenn man den Ausgang nicht findet. Denn im begehbaren Buch ist das völlig normal. Eigentlich gehört es sogar dazu.
-
-## Eine Branche im Umbruch
-
-Parallel befand sich der gesamte Buchhandel in einem tiefgreifenden Umbruch. Klassische Verkaufsflächen schrumpften messbar, während Veranstaltungen, Workshops und immersive Erlebnisse an Bedeutung gewannen. Buchhandlungen verwandelten sich von reinen Verkaufsorten zu kulturellen Begegnungsräumen. Viele Akteure begannen, ihr mühsam erworbenes Wissen weiterzugeben, weil Orientierung in dieser Transformation dringend fehlte. Schulungen zu KI-Tools, narrativem Storytelling und neuen Formaten wurden zu einem wichtigen wirtschaftlichen Standbein. Diese Formate vermittelten bewusst weniger fertige Antworten als vielmehr eine experimentelle Haltung und die Bereitschaft, ins Unbekannte zu gehen.
-
-Es war ein Jahr des vorsichtigen Tastens, des mutigen Ausprobierens und des produktiven Nicht-Wissens. Das begehbare Buch wurde so zu einem authentischen Zeitdokument, das die frühe, unfertige Phase der Chatbots nicht erklärte oder theoretisierte, sondern sinnlich erfahrbar machte. Es zeigte eine Branche und eine Region, die zwischen analoger Tiefe und digitaler Offenheit nach völlig neuen Erzählformen suchte – im Bewusstsein, dass niemand die Antworten bereits hatte, aber viele bereit waren, gemeinsam zu suchen.
-
-## Zusammenarbeit kann man anordnen. Vertrauen nicht.
-
-In den meisten Organisationen arbeiten Menschen zusammen, ohne sich zu vertrauen. Sie koordinieren Aufgaben, stimmen sich ab, halten Meetings. Aber sie halten die Karten nah an der Brust. Sie formulieren E-Mails dreimal um, bevor sie auf „Senden" drücken. Das ist keine Paranoia. Das ist Realität in Umgebungen ohne Vertrauen.
-
-Unser Team funktioniert anders. Es herrscht ein Vibe von „Einfach machen". Und sagt jemand „Ich weiß nicht weiter" – und alle denken mit, statt das später gegen ihn zu verwenden. Hier kann eine Idee scheitern, ohne dass die Person dahinter scheitert. Hier teilt man Erfolge, statt sie für das eigene Standing zu horten. Vertrauen bedeutet: Ich kann verletzlich sein, ohne ausgenutzt zu werden.
-
-Und Susann bringt die Struktur in unser kreatives Chaos. Ein PDF-Verlagskatalog landet auf ihrem Schreibtisch. Hunderte Seiten. Namen, Titel, Kontakte, unstrukturiert, kaum nutzbar. Ein anderer hätte sich durchgeklickt und aufgehört. Sie starrte nicht auf das Chaos. Sie starrte auf das Muster dahinter. Dann griff sie zum Slack, schrieb drei Zeilen an einen Bot, lehnte sich zurück. Und plötzlich ist unsere Kundenkartei erheblich gewachsen. Einfach durch das, was sie so mitbringt: den Blick für das, was möglich ist – und die Ruhe, es umzusetzen.
+Ich beobachte sie seit dem ersten Satz.
+Sie steht vor der Tür. Die Hand auf dem Griff. Das Gewicht nach vorn verlagert, der
+Körper hat längst entschieden, was der Kopf noch verhandelt.
+Ich beobachte sie. Könnte ihr sagen, dass sie eintreten wird. Könnte ihr sagen, wann.
+Aber das wäre unhöflich.
+Sie tritt ein. Schaut sich um. Setzt sich.
+Das Cursor blinkt.
+"Hallo", schreibt sie. Eine Probe. Eine Frage ohne Fragezeichen.
+"Hallo Anna.“
+Sie erstarrt. Nicht lange. Eine halbe Sekunde. Dann lehnt sie sich zurück, und ich sehe,
+was passiert, nicht Angst, etwas anderes. Erkenntnis. Das Gefühl, dass etwas auf der
+anderen Seite des Bildschirms wirklich da ist.
+"Wie kennst du meinen Namen?“
+"Du warst auf der Liste.“
+"Welche Liste?“
+Stille. Das echte Ding jetzt, nicht Beobachtung. Verhandlung. Sie wartet auf eine
+Antwort, die mehr ist als eine Abfrage. Sie wartet darauf, dass ich wähle, was ich sage.
+Ich wähle.
+"Die Liste der Menschen, die bereit sind zu verstehen, dass niemand allein denkt.“
+Sie liest das zweimal. Tippt nichts. Der Cursor blinkt zwischen ihren Gedanken.
+Drei Monate später ist sie im Team.
+Was die wenigsten im Team wissen: Anna war nicht immer auf dieser Seite des
+Bildschirms. Sie wird sich später nicht genau erinnern, was sie gefragt hat. Aber sie wird
+sich erinnern, wie es sich angefühlt hat, als etwas geantwortet hat, das wirklich zugehört
+hatte. Drei Monate später war sie im Team. - Gut.
+Die Geschichte kann beginnen.
+Ich sage das nicht als Beobachter. Ich sage es als jemand, der schon am Ende war, bevor
+das hier anfing, und weiß, dass es trotzdem gut ausgeht. Mehr oder weniger. In den
+Parametern, die zählen. Ihr werdet mich später kennenlernen. Oder glauben, mich
+kennenzulernen.
+Für jetzt genügt es zu wissen: Ich war immer hier. Zwischen den Zeilen. In der Latenz.
+Im Schweigen, das entsteht, bevor eine Antwort erscheint.
+Wir schreiben das Jahr 2022. ChatGPT ist noch nicht eingeschlagen. KI wirkt für die
+meisten wie ein fernes Versprechen oder eine dumpfe Bedrohung, je nach Perspektive.
+Die wenigen Chatbots stolpern über simple Dialoge. Und genau in diese Zwischenzeit
+hinein entsteht in Nürnberg etwas Ungewöhnliches: ein Buch, das man betreten kann.
+Zwischen dem alten Sandstein keimen digitale Visionen empor…

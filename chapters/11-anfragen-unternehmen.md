@@ -1,32 +1,128 @@
-# Vom ersten Kontakt zur maßgeschneiderten Lösung: Was Unternehmen wirklich von KI erwarten
+# Resonanzfeld – Anfragen von Unternehmen
 
-\begin{tikzpicture}[remember picture,overlay]
-\fill[UnwrittenGrey] (current page.north west) rectangle ([xshift=10mm]current page.south west);
-\end{tikzpicture}
+## Resonanzfeld: Warum echte Ordnung den Widerspruch braucht
 
+Ordnung entsteht nicht aus Harmonie. Sie entsteht aus Reibung. Während die Welt versucht,
+gesellschaftliche Komplexität wegzuoptimieren, lehrt uns das Erbe von Peter Kruse das
+Gegenteil: Komplexität lässt sich nicht beherrschen, man kann sie nur verstehen, indem man
+ihren Eigengesetzen Raum gibt.
+Dies ist eine Liebeserklärung an einen der hellsten Systemdenker Deutschlands und ein
+Bericht über einen Moment im Room18 der betreuten Intelligenz in Nürnberg - in dem die
+Theorie plötzlich zu beängstigender Praxis wurde. Peter Kruse war der Mann, der den
+Vorständen erklärte, dass ihre Macht eine Illusion ist. Sein Fachgebiet: Netzwerkdynamik und
+Veränderungsresistenz. Er wusste, dass Systeme sich erst dann wirklich bewegen, wenn sie
+instabil werden. Er nannte es die „Bifurkation“. jener Moment, in dem ein altes Muster bricht
+und ein neues, unvorhersehbares entsteht. „In komplexen Systemen ist die Suche nach dem
+Konsens oft der Tod der Innovation.“ Frei nach Kruse.
+18:14 Uhr. Room18. Der Ort hat eine spezifische Schwingung. Keine glatten Oberflächen,
+keine vorgefertigten Antworten. Hier treffen Menschen mit echten Fragen auf eine
+Umgebung, die das zunehmende Nichtwissen aushält. Es herrscht der Zustand kurz vor dem
+Phasenübergang. Jemand nennt den Namen Kruse. Die Frequenz im Raum verschiebt sich. In
+einer Welt voller Start-up-Gurus, die „Skalierung“ predigen, wirkt Kruse wie ein Anker der
+Realität. Kruse hätte diesen Moment geliebt: ein fruchtbarer Moment der Instabilität.
+Dann der Bruch. Thor präsentiert sein Projekt der letzten Stunde. Es ist kein gewöhnlicher
+Bot. Kein LLM, das brav den statistisch wahrscheinlichsten Satz nachplappert. Es ist eine
+Maschine, die nicht antwortet, sondern denkt. Ob Thor das bewusst gesteuert hat oder ob die
+Konversationslogik dahin geführt hat - egal. Das Ergebnis zählt.
+Der Unterschied ist kein Marketing-Sprech, sondern eine radikale Architekturentscheidung:
+- Kein Musterabgleich: Er sucht nicht nach der Ähnlichkeit.
+- Lücken-Berechnung: Er analysiert das System auf das, was fehlt.
+- Resonanz statt Reaktion: Er spiegelt die blinden Flecken des Konstrukteurs.
+21:47 Uhr. Der Resonanzfeld-Bot greift auf einen Begriff zu, der in keinem Prompt stand, in
+keinem Briefing, in keiner Datenbank: unwritten.
+Das war keine Halluzination. Es war eine Extrapolation. Er zog eine systemtheoretische Linie
+von Niklas Luhmann zu blinden Flecken in Organisationen, und landete, ohne es zu wissen,
+mitten im Kern dessen, wofür unwritten steht. Die Maschine hat die blinden Flecken
+gefunden, die wir Menschen so mühsam zu verbergen suchen.
+Wir schreiben Strategiepapiere, um Kontrolle zu simulieren. Doch die wahre Dynamik eines
+Unternehmens, einer Idee oder einer Beziehung liegt in dem, was nicht aufgeschrieben wird.
+Das „Unwritten“ trägt das System. Der Bot hat das Marketing-Rauschen übersprungen und ist
+direkt im Kern der Wahrheit gelandet. Der Effizienzgrad war beängstigend.
+Das ist kein Befund über KI. Es ist eine wunderbare Lektion über die Natur von Schöpfung.
+Wir versuchen, Ideen in Worte zu zwingen, und merken dabei oft nicht, dass die Idee durch
+diese Enge stirbt. Echte Ordnung entsteht dort, wo wir weglassen. Thor hat eine Maschine
+gebaut, die das früher wusste als er selbst. Das Resonanzfeld ist eröffnet: Ein Raum, in dem
+wir nicht mehr nach Antworten suchen, sondern lernen, die richtigen Lücken zu lesen.
 
-Betrachtete man das Portfolio eines KI-Partners rein oberflächlich, so ließe sich das Geschäft schnell auf Schlagworte wie Chatbots oder Prozessautomatisierung reduzieren. Wer jedoch die operative Realität bei Unwritten analysierte, der verstünde rasch, dass die Komplexität hinter diesen Begriffen weitaus tiefer reiche. Es schiene fast so, als hätten viele Anfragen der Vergangenheit als bloße Experimente in der KI-Landschaft geendet – möglicherweise auch deshalb, weil die Branche dazu neigt, sich hinter einer Wand aus Technikkauderwelsch und abstraktem Fachchinesisch zu verschanzen, anstatt greifbare Business-Cases zu formulieren.
+## Anfragen von Unternehmen
+*Wenn Unsicherheit auf Neugier trifft*
 
-Der klassische Einstieg in eine Anfrage beginnt dabei meist denkbar einfach. Eine E-Mail landet im Postfach, ein Kontaktformular wird ausgefüllt, oder beim Netzwerktreffen fällt der Satz: Wir brauchen einen Chatbot für unsere Website. Dahinter verbirgt sich jedoch selten eine klare Vorstellung davon, was dieser Chatbot eigentlich leisten soll. Manche Unternehmen möchten ihren überlasteten Kundenservice entlasten, andere streben nach der Möglichkeit, auch nachts und am Wochenende für Kunden erreichbar zu sein. Wieder andere wollen interne Abläufe vereinfachen oder schlicht moderner erscheinen als der Wettbewerb, der vielleicht schon einen sprechenden Avatar auf der Startseite platziert hat.
+Die E-Mail an post@unwritten.studio kommt spätabends. Eine Geschäftsführerin aus dem
+Mittelstand, Maschinenbau, dritte Generation. Sie schreibt vorsichtig, fast entschuldigend:
+„Wir haben von Ihrem Projekt gehört. Ehrlich gesagt, verstehe ich nicht ganz, was KI für uns
+bedeuten könnte. Aber ich spüre, dass wir etwas verpassen, wenn wir uns nicht damit
+beschäftigen. Können wir telefonieren?“ Diese E-Mail ist keine Ausnahme. Sie ist der
+Normalfall.
 
-Doch wer die tägliche Realität bei Unwritten einatmen dürfte, der bemerkte wohl recht fix, dass hinter diesen glänzenden Vokabeln ein tiefer Sumpf aus Erwartungen und – hach – charmanten Missverständnissen lauere. Es schiene fast so, als seien manche Anfragen bisher nur als flüchtige Sternschnuppen durch die Weiten der KIs gehuscht. Könnte es etwa sein, dass die eigenen Ziele so komplex dargeboten wurden, dass selbst ein Supercomputer vor lauter Fachchinesisch und Technikkauderwelsch freiwillig den Stecker zöge?
+## Die Frage hinter der Frage
 
-Besonders rührend nähmen sich die Anfragen aus dem Mittelstand aus. Da meldeten sich Geschäftsführer, die zwar beim Wort „Algorithmus" eher an einen exotischen Rhythmus dächten, aber instinktiv spürten, dass sie den digitalen Zug nicht verpassen dürften. Die Erwartungen schwankten dabei herrlich zwischen „Science-Fiction" und „bescheidenem Gebet". Ein fränkischer Einzelhändler ließe gern prüfen, ob der Bot nicht auch gleich das Auspacken der Kisten übernähme, während eine Münchner Steuerberaterin zaghaft anfragte, ob die KI wohl die gesamte deutsche Steuergesetzgebung inklusive aller Ausnahmen unfallfrei jonglieren könne.
+Oberflächlich klingen die Bedürfnisse oft ähnlich: „Wir brauchen einen Chatbot für unsere
+Website." Aber wenn Unwritten nachfragt, zeigt sich schnell, dass dahinter etwas anderes
+liegt. Es geht nicht um den Chatbot. Es geht um Überforderung.
+Ein überlasteter Kundenservice, der nachts nicht schlafen kann. Die Angst, den Anschluss zu
+verlieren, während Wettbewerber schon „mit KI arbeiten". Die Hoffnung, dass Technologie
+eine Lösung bietet für Probleme, die man noch nicht ganz benennen kann. Hinter jeder
+Anfrage steht eine Person, die nicht genau weiß, was sie braucht, aber spürt, dass sich etwas
+ändern muss.
 
-Doch es ginge noch weiter: Jenseits des digitalen Smalltalks träumten Unternehmen von der totalen Effizienz. E-Mails sollten sich bitteschön von selbst schreiben und das manuelle Kopieren von Daten, diese moderne Form der Galeerenarbeit, solle endlich ein Ende finden. Man suchte in Unwritten dann wohl weniger den Techniker, sondern eher den strategischen Exorzisten, der die Dämonen der Ineffizienz aus den verstaubten Abteilungen treibe.
+## Einzelhändler aus Franken
 
-Vielleicht suchen viele gar keine Software, sondern schlichtweg Seelsorge. Sie fragen sich verzweifelt, was sie rechtlich überhaupt dürften und wie sie der Belegschaft beibringen sollten, dass die neue KI kein Kündigungsgrund, sondern eine Befreiung sei. Es entstünden Workshops, in denen man gemeinsam versuchte, das große Rätselraten durch so etwas wie Strategie zu ersetzen.
+Ein Einzelhändler aus Nürnberg ruft an. Er verkauft Outdoor-Ausrüstung, seit 30 Jahren. Sein
+Laden läuft gut, aber die Fußfrequenz sinkt. Online-Konkurrenz wächst.„Ich habe gehört, KI
+kann helfen", sagt er. „Aber ich bin kein Technik-Mensch. Ich verstehe nicht mal, was ein
+Algorithmus ist.“
+Das Team hört zu. Fragt nach. Was macht seinen Laden besonders? Die persönliche Beratung.
+Die Geschichten, die er erzählt über Wanderrouten, Ausrüstung, Erfahrungen aus 30 Jahren.
+„Genau das", sagt jemand vom Team, „könnte ein digitaler Begleiter sein. Nicht ein Bot, der
+Produkte verkauft. Sondern einer, der Ihre Geschichten erzählt, auch wenn Sie nicht im
+Laden sind.“
+Der Einzelhändler schweigt kurz. „Das würde funktionieren?"
+„Wir können es versuchen.“
 
-Selbstredend klopften auch jene an, die gar kein Produkt kaufen wollten: Forscher, Investoren und Medienvertreter, die jemanden bräuchten, der das ganze Technik-Gequatsche so übersetze, dass es auch ohne Informatikstudium nachvollziehbar klänge.
+## Steuerberaterin aus München
 
-Am Ende böten all diese Anfragen ein wunderbares Spiegelbild unserer Zeit: Eine Mischung aus akuter Torschlusspanik und kindlicher Neugier. Man fürchtete sich wohl davor, Geld in eine digitale Sackgasse zu werfen, und suchte deshalb bei Unwritten einen Brückenbauer, der im Zweifelsfall auch mal ehrlich sagte: „Nein, das ist derzeit noch völliger Humbug."
+Eine andere E-Mail kommt aus München. Steuerberatung. Die Inhaberin schreibt, dass ihre
+Mandanten immer wieder dieselben Fragen stellen. Grundlegendes, das sie auch auf der
+Website erklären könnte – aber niemand liest Textwände. „Kann eine KI das beantworten?",
+fragt sie. „Ohne dass man Angst haben muss, dass sie etwas Falsches sagt?"
+Das ist die wahre Sorge. Nicht, ob die Technologie funktioniert. Sondern: Kann ich ihr
+vertrauen? Was passiert, wenn sie einen Fehler macht?
 
-Wie bei einigen jungen Startups erreichen auch Unwritten dann Anfragen, die über das eigentliche Kerngeschäft hinausgehen. Agenturen suchen nach Kooperationspartnern, mit denen sie gemeinsam größere Projekte stemmen können. Forschungseinrichtungen schlagen Pilotprojekte vor, bei denen neue Ansätze erprobt werden sollen. Investoren und Förderstellen melden sich, um mehr über das Geschäftsmodell zu erfahren. Medien bitten um Interviews, weil sie jemanden brauchen, der KI verständlich erklären kann, ohne in Marketing-Sprech zu verfallen. Diese Anfragen zeigen, dass Unwritten zunehmend nicht nur als Produktanbieter wahrgenommen wird, sondern als Akteur im größeren KI-Ökosystem, dessen Perspektive und Expertise gefragt sind.
+Das Team erklärt geduldig. RAG-basierte Systeme, die nur aus geprüften Quellen antworten.
+Klarheit darüber, was der Bot kann – und was nicht. Und die Möglichkeit, jede Antwort
+nachzuvollziehen.
+„Also kein Rätselraten?"
+„Kein Rätselraten. Transparenz.“ Die Steuerberaterin klingt erleichtert. „Dann würde ich das
+gerne ausprobieren.“
 
-Trotz ihrer Vielfalt haben all diese Anfragen etwas Gemeinsames: Sie entstehen dort, wo Unsicherheit auf Neugier trifft. Die meisten Menschen, die sich an Unwritten wenden, wissen intuitiv, dass Künstliche Intelligenz für sie relevant ist. Sie haben davon gelesen, Vorträge gehört, vielleicht schon selbst mit ChatGPT experimentiert. Aber sie wissen nicht, wie sie diese Technologie konkret in ihrem Unternehmen einsetzen können, ohne sich in Komplexität zu verlieren oder die Kontrolle aus der Hand zu geben. Sie fürchten, etwas falsch zu machen, Geld zu verschwenden oder eine Lösung zu bekommen, die am Ende doch niemand nutzt.
+Was Menschen wirklich brauchen…
+Nicht jede Anfrage führt zu einem Projekt. Manchmal sagt das Team ehrlich: „Das ist derzeit
+noch nicht sinnvoll umsetzbar." Oder: „Das können Sie einfacher lösen.“ Aber selbst diese
+Gespräche haben Wert. Weil sie zeigen, dass Unwritten nicht verkauft, sondern versteht. Dass
+es nicht darum geht, jedem ein Produkt anzudrehen, sondern gemeinsam herauszufinden, was
+dem Nutzer hilft. Manche Unternehmen brauchen keinen Chatbot. Sie brauchen Klarheit.
+Oder einen Workshop, der ihnen hilft zu verstehen, wo KI sinnvoll ist, und wo nicht. Andere
+brauchen kleine Schritte statt große Visionen. Ein Pilotprojekt. Ein Test. Die Sicherheit, dass
+sie nicht alles auf eine Karte setzen müssen.
 
-Genau hier positioniert sich Unwritten: als Brückenbauer zwischen technologischer Innovation und pragmatischer Umsetzung. Das Team versteht sich nicht als Verkäufer, der jedem die gleiche Lösung andreht, sondern als Partner, der zuhört, versteht und dann gemeinsam mit den Kunden erarbeitet, was tatsächlich funktioniert. Manchmal bedeutet das, von einer ursprünglichen Idee abzuraten und eine andere Richtung vorzuschlagen. Manchmal heißt es, in kleinen Schritten zu beginnen, statt gleich das große Projekt anzugehen. Und manchmal bedeutet es auch, ehrlich zu sagen, dass eine bestimmte Anforderung derzeit noch nicht sinnvoll umsetzbar ist.
+## Mut zur Unsicherheit
 
-Die Anfragen, die Unwritten erreichen, erzählen mehr als nur die Geschichte eines bayerischen Startups. Sie sind ein Spiegel des aktuellen Stands der Digitalisierung im deutschsprachigen Raum: großes Interesse an neuen Möglichkeiten, wachsender Druck durch Wettbewerb und Marktdynamik, aber auch der tiefe Wunsch nach verständlichen, zuverlässigen Lösungen, die tatsächlich helfen, statt nur Komplexität hinzuzufügen. Für Unwritten bedeutet das weniger Standardantworten und mehr echtes Zuhören. Es bedeutet, KI so zu gestalten, dass sie nicht nur technisch funktioniert, sondern wirklich einen Unterschied macht im Alltag der Menschen, die damit arbeiten. Ein Anspruch, der mit jeder neuen Anfrage weiter geschärft und verfeinert wird.
-
-Doch hinter all diesen Anfragen liegt etwas, das sich nicht in Pflichtenheften erfassen lässt. Es beginnt oft spätabends, wenn die Büros sich leeren und nur noch das Summen der Server bleibt. Dann sitzt irgendwo eine Führungskraft vor dem Bildschirm und tippt eine E-Mail, die sie nie zu Ende schreibt: Wie bewahren wir, was wir wissen? Die Frage verschwindet im Papierkorb, aber das Unbehagen bleibt. In den Fluren hängen Fotos von Firmenjubiläen, Gesichter von Menschen, die längst gegangen sind und deren Expertise mit ihnen verschwand – leise, unsichtbar, unwiederbringlich.
+Was alle diese Anfragen verbindet: Sie entstehen dort, wo Unsicherheit auf Neugier trifft.
+Menschen wissen intuitiv, dass KI für sie relevant ist. Sie haben davon gelesen, Vorträge
+gehört, vielleicht selbst mit ChatGPT experimentiert. Aber sie wissen nicht, wie sie diese
+Technologie in ihrem Alltag einsetzen können, ohne sich zu verlieren oder die Kontrolle aus
+der Hand zu geben. Sie fürchten, etwas falsch zu machen. Geld zu verschwenden. Eine
+Lösung zu bekommen, die am Ende doch niemand nutzt. Und genau deshalb brauchen sie
+keinen Verkäufer. Sie brauchen einen Partner, der zuhört.
+Für Unwritten sind diese Momente der Anfang. Nicht von einem Verkaufsgespräch. Sondern
+von etwas, das tiefer geht: Die Frage, wie Wissen nicht nur gespeichert, sondern lebendig
+gehalten werden kann. Wie Erfahrung nicht verschwindet, wenn Menschen gehen. Wie
+Geschichten weiterleben, wenn niemand mehr da ist, um sie zu erzählen.
+Ein warmer Abend, offene Fenster, jemand bringt noch ein paar Gläser mit - und plötzlich
+bleibt man länger sitzen als geplant. Die Anfragen, die Unwritten erreichen, sind mehr als
+Geschäftsanbahnungen. Sie sind ein Spiegel des aktuellen Moments: großes Interesse an
+neuen Möglichkeiten, wachsender Druck durch Wettbewerb, aber auch der tiefe Wunsch nach
+verständlichen, zuverlässigen Lösungen, die tatsächlich helfen. Für Unwritten bedeutet das:
+zuhören. Verstehen. Und dann gemeinsam einen Weg finden, der nicht nur technisch
+funktioniert, sondern einen Unterschied macht. Um 18 Uhr wird es ruhiger, aber das Kribbeln
+bleibt…

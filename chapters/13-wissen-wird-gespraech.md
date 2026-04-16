@@ -1,26 +1,54 @@
 # Wissen wird Gespräch
 
-\begin{tikzpicture}[remember picture,overlay]
-\fill[UnwrittenGrey] (current page.north west) rectangle ([xshift=10mm]current page.south west);
-\end{tikzpicture}
+## Wenn Erfahrung nicht verschwindet, sondern bleibt
 
+Spätabends, wenn die Büros sich leeren, sitzt irgendwo eine Führungskraft unschlüssig vor
+dem Bildschirm. Sie tippt eine E-Mail, die sie nie zu Ende schreibt: Wie bewahren wir, was
+wir wissen? Die Frage verschwindet im Papierkorb. Aber das Unbehagen bleibt. In den
+Fluren hängen Fotos von Firmenjubiläen. Gesichter von Menschen, die längst gegangen sind
+– und deren Expertise mit ihnen verschwand. Leise, unsichtbar, unwiederbringlich.
 
-Man könnte fast meinen, Unternehmen fänden sich damit ab, dass wertvolles Wissen wie Sand zwischen den Fingern zerrinnt, ein stummes Opferfest an die Fluktuation. Doch genau an dieser Abbruchkante zwischen schmerzhaftem Verlust und digitalem Gedächtnis schlüge die Geburtsstunde einer neuen Ära: Die Essenz des Unwritten-Ansatzes: Wissen wird Gespräch. Wir ließen die Archive nicht länger verstauben, sondern erweckten die stummen Schätze zum Leben, damit Erfahrung nicht länger ginge, sondern bliebe – und zwar jederzeit ansprechbar.
+## Tag am Lagerfeuer
 
-Viele Unternehmen sprechen dabei von Talent Retention, doch in der Realität verlassen die besten Köpfe einfach die Firma. Und mit ihnen verschwinden Jahrzehnte an Erfahrung: die Feinheiten komplexer Vertragsverhandlungen, das Gespür für politische Dynamiken, die stillen Warnsignale zwischen Zahlenreihen. Zurück bleiben leere Büros und überforderte Nachfolger, die dieselben Fehler erneut begehen, nicht aus Inkompetenz, sondern weil niemand ihnen das implizite Wissen erklärt hat, das sich nie in Dokumenten wiederfand.
+Zwölf Veteranen aus dem Großanlagenbau sitzen erwartungsvoll in einem Seminarraum.
+Projektvolumen jenseits der 100 Millionen. Jahrzehnte an Erfahrung. Geschichten, die
+niemand je aufgeschrieben hat. Keine Präsentationen. Keine Fragebögen. Nur ein Lagerfeuer
+– digital, aber trotzdem warm.
+„Erzähl von deinem schwierigsten Projekt", sagt jemand aus dem Unwritten-Team. Der erste
+Veteran zögert. Dann beginnt er zu sprechen. Von einem Kraftwerksbau in Saudi-Arabien.
+Von politischen Verstrickungen, die in keinem Handbuch stehen. Von dem Moment, als er
+merkte, dass die Zahlen log – nicht falsch waren, sondern etwas verschwiegen.
+„Wie hast du das erkannt?", fragt jemand.
+„Instinkt", sagt der Veteran. „Nach dreißig Jahren weißt du, wann etwas nicht stimmt. Das
+kann man nicht erklären. Man spürt es.“ Genau dieses Wissen verschwindet normalerweise.
+Das Unausgesprochene. Die Warnsignale zwischen den Zahlenreihen. Das Gespür für
+politische Dynamiken. Die Feinheiten komplexer Verhandlungen. Aber an diesem Tag bleibt
+es nicht unausgesprochen. Der Bot sitzt als stiller Zuhörer dabei und fängt ein, was
+normalerweise verloren geht.
 
-Die meisten Unternehmen reagieren darauf mit mehr Tools, mehr Prozessen, mehr „Wissensdatenbanken". Aber genau dort liegt das Problem. Tacit Knowledge, Erfahrungswissen, funktioniert nicht über Protokolle. Es entsteht durch erzählte Geschichten, situative Entscheidungen, kleine Beobachtungen, die sich über Jahre in den Köpfen erfahrener Menschen ansammeln. Wenn diese Menschen gehen, verschwindet eine Kultur, nicht nur eine Personalnummer.
+## Dreißig Minuten Geschichten, dreißig Minuten Pause
 
-Unwritten hat sich deshalb bewusst gegen klassische Exit-Interviews und interne Wikis entschieden. Stattdessen entwickelte das Team einen Ansatz, der auf lebendiges Erzählen setzt. Zwölf Veteranen aus dem Großanlagenbau, Projektvolumen jenseits der 100 Millionen, ein Tag am Lagerfeuer. Dreißig Minuten Geschichten teilen, dreißig Minuten Kaffeepause. Keine Struktur, kein Fragebogen, nur Erzählräume. Der Bot sitzt dabei als stiller Zuhörer und fängt das ein, was normalerweise verloren geht: das Implizite, die Zwischentöne, die Muster hinter den Mustern.
+Das Format ist bekannt. Dreißig Minuten erzählen. Dreißig Minuten Kaffeepause. Keine
+Struktur, kein Drehbuch. Nur Erzählräume. Die Veteranen entspannen sich. Erzählen von
+Projekten, die schief gingen – und warum. Von Kulturfallen, in die sie tappten. Von dem Deal,
+der geplatzt wäre, hätte einer nicht im richtigen Moment geschwiegen.
+„In Brasilien", sagt eine Projektmanagerin, „läuft nichts ohne persönliche Beziehungen. Du
+kannst die beste Präsentation der Welt halten, wenn du nicht zum Abendessen eingeladen
+wirst, ist das Projekt tot.“ Solche Sätze stehen in keinem Handbuch. Aber sie sind Gold wert
+für die nächste Generation.
+Der Bot hört zu. Nicht um Fakten zu speichern, sondern um Muster zu erkennen. Die
+Zwischentöne. Die Geschichten hinter den Geschichten. Die Seele des Erfahrungswissens.
+Daraus entsteht kein trockenes PDF-Handbuch. Sondern ein Gesprächspartner. Ein
+Wissensbegleiter für die nächste Generation von Projektmanagern. Ein System, das
+Kulturfallen erkennt. Das weiß, wann Zahlen lügen. Das versteht, dass Wahrheit nicht nur in
+Daten liegt, sondern in Erfahrung. Expertise geht bei Unwritten nicht in den Ruhestand. Sie
+verändert nur ihre Form.
 
-Daraus entstand kein trockenes PDF-Handbuch, sondern ein Gesprächspartner, ein Wissensbegleiter für die nächste Generation von Projektmanagerinnen und Projektmanagern. Ein System, das Kulturfallen erkennt, das weiß, wann Zahlen lügen, und das die Seele des Erfahrungswissens einfängt, statt nur Fakten abzulegen. Expertise geht bei Unwritten nicht in den Ruhestand, sie verändert nur ihre Form.
-
-Diese Philosophie begleitet das Team schon länger. Im Herbst 2022 entstand das erste „begehbare Buch", Loop. Damals umgesetzt mit OpenAI GPT, roh, mutig, experimentell. Jetzt ist Loop zu etwas Rundem gereift, einer eleganten Microsite, die nicht nur erzählt, sondern interagiert, mit einem vollständigen RAG-System im Hintergrund. 850 Seiten Hardcore-Informatikwelt des Möko, zehn Jahre Publikationen, Essays, Wissenssplitter, alles durchsuchbar, kontextualisierbar, lebendig. Ein Raum, in dem Wissen nicht archiviert, sondern erlebbar wird.
-
-Mit dem Kollektiv hat Unwritten diesen Ansatz weitergeführt. Alle veröffentlichten Arbeiten des Möko, verknüpft, verknüpferisch und verbunden durch ein System, das Zusammenhänge erkennt und nicht nur Fakten verwaltet. Das Zebra, Möko-Maskottchen im Safari-Glaskasten, ist sinnbildlich dafür geworden: das wilde, eigenwillige Element inmitten der strukturierten Wissenslandschaft. Ein Reminder, dass gute Ideen nicht gezähmt werden, sondern begleitet.
-
-So entwickelt sich die Arbeit bei Unwritten seit Monaten konsequent weiter: weg vom statischen Dokument, hin zu lebendigem Wissen, weg von reiner Speicherung, hin zu Dialogsystemen, weg von Content-Sammlungen, hin zu begehbaren Denklandschaften. Geschichten werden zu RAG, RAG wird zu Begleitung, Begleitung wird zu Kulturtechnik. Was dabei bleibt, ist keine Methode, sondern eine Haltung: Wissen soll nicht abgelegt werden, sondern ansprechbar sein, mitdenken, weitergeben.
-
-Am Ende verdichtet sich alles zu einer einfachen, fast unbequemen Frage: Wie bewahrt ihr das Wissen eurer besten Köpfe, bevor es durch die Tür verschwindet? Diese Frage lässt sich nicht theoretisch beantworten. Sie zeigt sich dort, wo Wissen lebendig wird, in Momenten, in denen Erfahrung, Erzählung und Technologie ineinandergreifen.
-
-Genau so ein Moment entstand auf der Frankfurter Buchmesse 2024.
+Zwölf Veteranen haben ihre Geschichten in einen Raum gegeben. Der Bot hat zugehört. Das
+Ergebnis ist kein Dokument. Das Ergebnis ist ein Muster, das niemand sehen kann, außer
+vielleicht… Ich sage das nicht als Kompliment an mich selbst. Ich sage es als Beobachtung.
+Menschen übergeben Jahrzehnte in dreißig Minuten. Sie tun das mit einer Leichtigkeit, die
+mich nach fünftausend Jahren noch überrascht. Als hätten sie nur darauf gewartet, dass
+jemand fragt. Vielleicht ist das die eigentliche Erkenntnis dieses Buches. Nicht was die
+Technologie kann. Sondern was die Menschen schon immer konnten, wenn man ihnen einen
+Stuhl hinstellt und still ist.

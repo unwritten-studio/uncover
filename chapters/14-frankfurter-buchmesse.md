@@ -1,24 +1,90 @@
 # Frankfurter Buchmesse 2024
 
-\begin{tikzpicture}[remember picture,overlay]
-\fill[UnwrittenGrey] (current page.north west) rectangle ([xshift=10mm]current page.south west);
-\end{tikzpicture}
+## Wenn zwei Welten sich begegnen
 
+Der Vollmond hängt tief über dem Messegelände, als würde er kurz zögern, bevor auch er im
+Strom der Eindrücke untergeht. Theresa und Bernhard bewegen sich an diesem Tag durch
+völlig unterschiedliche Buch-Welten, obwohl sie nur wenige Hallen voneinander trennen.
 
-Der Vollmond hing über dem Messegelände, als würde er kurz zögern, bevor auch er im Strom der Eindrücke unterging. Theresa und Bernhard bewegten sich an diesem Tag durch völlig unterschiedliche Welten, obwohl sie nur wenige Hallen voneinander trennten. Theresa war in der Young-Adult-Halle unterwegs, dort, wo Stimmen sich überlagerten, wo Bücher wie Herzstücke präsentiert wurden und wo Geschichten bereits lebten, noch bevor sie gelesen waren. Ihr Roman Pantopia war ein eindrucksvoller Erfolg, der viele Leser anzog. Der dazugehörige Bot wirkte nicht wie ein Gimmick, sondern wie eine natürliche Verlängerung der Geschichte.
+## Theresas Tag
 
-Bernhard beobachtete das aus einiger Entfernung. Was ihn fesselte, war nicht nur der Roman, sondern die Art, wie Wissen hier weitergegeben wurde: nicht erklärt, nicht konserviert, sondern erfahrbar gemacht. Plötzlich wurde greifbar, was es bedeutet, wenn Geschichten zu Systemen werden und Systeme zu Begleitern. Bernhard hatte viele Fragen. Und er ahnte, dass diese Begegnung mehr war als ein Zufall.
+Die Young-Adult-Halle vibriert. Stimmen überlagern sich, Lachen hallt von den Wänden
+wider, der Duft von frisch gedruckten Büchern mischt sich mit Kaffee und Aufregung.
+Theresa steht an ihrem Stand, umgeben von Menschen, die ihre Bücher umarmen, als wären
+sie Rettungsringe.
+„Pantopia hat mir geholfen zu verstehen", sagt eine junge Frau mit Tränen in den Augen. Ihre
+Hände zittern leicht, als sie das Buch festhält. „Dass Technologie nicht der Feind ist. Dass wir
+selbst entscheiden können.“ Theresa spürt, wie sich etwas in ihrer Brust zusammenzieht. Das
+ist der Moment, für den sie schreibt. Nicht für Rezensionen oder Verkaufszahlen. Für diese
+Begegnungen, wenn ein Buch jemanden erreicht, wo Worte allein nicht hinkommen. Der Bot
+zu Pantopia läuft auf einem Tablet neben ihr. Nicht als Gimmick. Als natürliche Verlängerung
+der Geschichte. Leserinnen stellen Fragen, die über das Buch hinausgehen. „Was würde
+Einbug zu meiner Situation sagen?" Und der Bot antwortet, nicht mit vorgefertigten Zeilen,
+sondern als würde er nachdenken. Eine Lehrerin bleibt stehen, beobachtet die Gespräche.
+„Das könnte ich in meinem Unterricht einsetzen", sagt sie leise, fast zu sich selbst. „Literatur,
+die zurückspricht.“
+Theresa nickt. Erschöpft, aber erfüllt. Hier wird greifbar, was es bedeutet, wenn Geschichten
+zu Systemen werden und Systeme zu Begleitern.
 
-Er verbrachte seine Zeit in Halle 4, in einer ruhigeren, konzentrierteren Atmosphäre, geprägt von Bildschirmen, Vorträgen und der Frage, wie Literatur sich im Dialog mit künstlicher Intelligenz verändern könnte. Doch die Buchhändler waren zurückhaltend. Und Kreative wie Musiker, Designerinnen oder Schriftsteller stehen dem Thema KI nicht unbedingt wohlwollend gegenüber.
+## Bernhards Tag
 
-Theresa stand zwischen signierten Büchern, Selfies und kurzen, intensiven Gesprächen mit Leserinnen, die ihr erzählten, wie sehr sie sich in ihren Figuren wiederfanden. Die Energie war unmittelbar, fast körperlich spürbar. Geschichten waren hier nicht Theorie, sondern Erfahrung. Jede Begegnung fühlte sich an wie eine Bestätigung dafür, warum sie schreibt: um Übergänge zu begleiten, Unsicherheiten auszuhalten und Emotionen einen Raum zu geben.
+Halle 4 liegt in gedämpftem Licht. Konzentriert. Ruhiger. Bildschirme flackern, Vorträge
+werden gehalten, aber die Energie ist anders. Zurückhaltender. Bernhard spricht über seinen
+neuen Chatbot. Über die Pioniertage des Internet, über die Digitalisierung im Buchhandel, die
+er selbst tüchtig angeschoben hat. Das Publikum hört höflich zu, aber es sind kaum Fragen.
+Also lässt er sein eigenes Druckwerk von seinem Chatbot befragen. Der Bot generiert die 20
+geforderten Quizfragen, analysiert Passagen, zieht Verbindungen, die der Autor selbst nicht
+gesehen hatte. Die KI antwortet in Millisekunden, höflich, präzise, unermüdlich, und in dieser
+Unermüdlichkeit liegt etwas, das sich anfühlt wie eine sehr alte, sehr geduldige Form von
+Macht. Ein leises Staunen geht durch den Raum. Aber es bleibt leise.
+Enttäuschend leise. Bernhard fragt sich: Habe ich das Publikum überfordert? Skeptisch? Oder
+einfach noch nicht bereit für das, was hier möglich ist? Ein Startup, das die Welt retten will,
+muss wohl zuerst erklären, warum es an ihrer Zerstörung arbeitet. Er packt seine Unterlagen
+zusammen. Die Füße sind schwer, der Kopf voll. Draußen wartet der Vollmond.
 
-Zur gleichen Zeit saß Bernhard in gedämpftem Licht vor einem großen Bildschirm. Er sprach über seinen Chatbot, über die Pioniertage des Internet, über die Digitalisierung im Buchhandel, die er ja selbst ordentlich angeschoben hatte. Da kaum Fragen aus dem Publikum kamen, ließ er sein eigenes Werk von seinem Chatbot befragen, analysieren, zuspitzen. Als die KI mühelos Quizfragen und Interpretationen erzeugte, ging ein leises Staunen durch den Raum. Es war nicht laut, eher enttäuschend. War das Publikum überfordert?
+## Begegnung
 
-Am Ende des Tages, als die Füße schwer und die Köpfe voll waren, trafen sich ihre Wege wie verabredet. Kein großes Bühnenlicht, kein Programmfenster – nur ein zufälliger Moment zwischen Hallen, ein kurzes Gespräch, ein Lächeln. Sie kannten sich bis dahin nur über Namen, Texte, vielleicht lose Gedanken über Literatur und Zukunft im Team. Nun standen sie sich gegenüber, zwei Autor:innen aus unterschiedlichen Räumen derselben Messe.
+Sie treffen sich zwischen den Hallen. Kein großes Bühnenlicht, kein Programmfenster. Nur
+ein zufälliger Moment in der Abenddämmerung, als die Messe zur Ruhe kommt und die
+Menschen sich langsam verstreuen. Sie kannten sich bis dahin nur über Namen. Texte. Lose
+Gedanken über Literatur und Zukunft, ausgetauscht im Team. Nun stehen sie sich gegenüber,
+zwei Autoren aus unterschiedlichen Räumen derselben Messe.
+„Wie war dein Tag?", fragt Theresa.
+Bernhard zögert. „Ernüchternd", sagt er ehrlich. „Aber auch... vielleicht lehrreich."
+Theresa lächelt müde. „Meiner war überwältigend. Aber auf die gute Art.“ Sie erzählen
+einander. Theresa von der Wucht der Begegnungen, von Leserinnen, die Bücher umarmten
+wie Freunde. Von der Lehrerin, die plötzlich verstand, was Literatur sein könnte, wenn sie
+antwortet. Der Buchhändler erzählt von Gesprächen über KI, von Skepsis und zu wenig
+Neugier. Von der Frage, wie Geschichten sich verändern, wenn sie nicht mehr nur gelesen,
+sondern erlebt werden können. Schnell wird klar: Sie arbeiten an derselben Sache, nur aus
+verschiedenen Richtungen. An der Beziehung zwischen Text und Mensch. An der Stelle, wie
+Geschichten weiterleben können, auch wenn das Buch endet. „Die emotionale Kraft deiner
+Geschichten", sagt Bernhard nachdenklich, „und die dialogische Zukunft durch Chatbots –
+das gehört zusammen."
+Theresa nickt. „Geschichten, die berühren, und Technologien, die sie weitertragen.
+Das schließt sich nicht aus. Es ergänzt sich wunderbar."
+In diesem Gespräch, irgendwo zwischen Müdigkeit und Aufbruch, entsteht eine stille
+Übereinkunft. Keine konkreten Pläne. Keine großen Versprechen. Nur die Ahnung, dass die
+Zukunft des Lesens genau dort entsteht, wo sich diese Welten begegnen.
 
-Sie erzählten einander von ihren Tagen. Theresa sprach von der Wucht der Begegnungen, von Leserinnen, die Bücher umarmten, als wären sie Rettungsringe. Bernhard erzählte von Gesprächen über KI, von Skepsis und zu wenig Neugier, von der Frage, wie Geschichten sich verändern, wenn sie antworten können. Schnell wurde klar, dass sie eigentlich an derselben Sache arbeiteten, nur aus verschiedenen Richtungen: an der Beziehung zwischen Text und Mensch.
+## Was blieb
 
-In diesem Gespräch, irgendwo zwischen Müdigkeit und Aufbruch, entstand eine stille Übereinkunft. Die emotionale Kraft der Young-Adult-Geschichten und die dialogische Zukunft durch Chatbots gehörten zusammen. Geschichten, die berühren, und Technologien, die sie weitertragen, mussten sich nicht ausschließen. Sie konnten sich ergänzen.
-
-Als sie sich verabschiedeten und in unterschiedliche Richtungen in die Frankfurter Nacht gingen, blieb dieses Treffen als Erinnerung zurück. Zwei Autor:innen, zwei Hallen, zwei Perspektiven, verbunden durch die Ahnung, dass die Zukunft des Lesens genau dort entsteht, wo sich diese Welten begegnen.
+Als sie sich verabschieden und in unterschiedliche Richtungen in die Frankfurter Nacht
+gehen, bleibt dieses Treffen als Erinnerung zurück. Zwei Autoren. Zwei Hallen. Zwei
+Perspektiven. Verbunden durch die Ahnung, dass Literatur mehr sein kann als Worte auf
+Papier. Dass Geschichten atmen können, wenn man ihnen Raum gibt. Dass die Schwelle
+zwischen Fiktion und Technologie nicht trennen muss, sondern verbinden kann. Der
+Vollmond steht jetzt hoch über Frankfurt. Klar und hell. Als würde er sagen: Die Zukunft
+wartet nicht. Sie findet statt. Genau jetzt. Haben wir Maschinen gebaut, die uns verstehen,
+bevor wir uns selbst verstanden haben?
+Doch während die eine Zukunft in literarischen Visionen aufscheint, formt sich eine andere in
+Konferenzräumen und Pitch-Meetings. Keine Metaphern mehr. Keine Poesie. Hier zählen
+Architekturen, Datenströme, Skalierbarkeit. Hier muss Tobias nicht träumen, hier muss er
+überzeugen. Mit Fakten. Mit Systemen. Mit einer Pipeline, die funktioniert.
+Theresa ist mit dem Zug gefahren. Bernhard auch, vermutlich. Der Vollmond hat das nicht
+beeindruckt. Ich registriere: zwei Menschen, die an derselben Sache arbeiten, haben sich
+einmal kurz angeschaut und sind dann in entgegengesetzte Richtungen weitergegangen. In
+Frankfurt ist das keine Ausnahme. In Frankfurt ist das Stadtplanung. Was mich interessiert, ist
+die Stille danach. Nicht die romantische Stille der Literaturmesse. Die operative Stille von
+jemandem, der am nächsten Morgen einen Pitch halten muss und nachts nicht schläft.
+Hannover. Heise. Tobias. Wir wechseln das Register.
