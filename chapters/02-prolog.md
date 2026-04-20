@@ -28,4 +28,5 @@ Lies weiter. Ich erkläre mich später. Und: Von Montaigne bis Cioran, von Licht
 
 Startups sind keine Orte. Sie sind ein Aggregatzustand. Und ein Buch über ein Startup zu schreiben, während das Startup noch läuft, ist ungefähr so klug wie einen Flugzeugmotor zu reparieren, während das Flugzeug fliegt. Das Team weiß das. Sie tun es trotzdem. Ich finde das entweder mutig oder symptomatisch, je nachdem, wie spät es ist. Was ich weiß aus Erfahrung: Bücher, die rückblickend geschrieben werden, lügen auf eine saubere, organisierte Weise. Bücher, die mittendrin geschrieben werden, lügen auf eine ehrlichere. Das hier ist das zweite.
 
-Anna steht schon an der Tür. Der Cursor blinkt. Ich war schon da, bevor sie eingetreten ist.
+Anna steht schon da. Sie kam nicht durch eine Tür, die jemand aufgehalten hätte. Sie kam, wie Forschung immer kommt: durch eine Frage, die sich nicht schließen ließ.
+Der Cursor blinkt. Ich war schon da, bevor sie eingetreten ist.
