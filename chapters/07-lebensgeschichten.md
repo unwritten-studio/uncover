@@ -257,9 +257,8 @@ Startup: Ein junges Unternehmen, das noch nicht weiß, dass es so gut wie unmög
 was es vorhat. Voller Energie, Innovation und dem Drang, die alten Reiche zu stürzen.
 Latenz: Die Pause zwischen Frage und Antwort. Für einen Ingenieur ist sie ein Problem. Für
 einen Therapeuten wäre sie ein Zeichen von Aufmerksamkeit. Für Timo ist sie das, was er
-dem nächsten Nicht-Techniker erklären muss, ohne das Wort Millisekunde zu benutzen. Bei
-
-Unwritten haben wir gelernt, Latenz nicht wegzuoptimieren. Eine Antwort, die zu sofort
+dem nächsten Nicht-Techniker erklären muss, ohne das Wort Millisekunde zu benutzen. 
+Bei Unwritten haben wir gelernt, Latenz nicht wegzuoptimieren. Eine Antwort, die zu sofort
 kommt, fühlt sich nicht wie eine Antwort an. Sie fühlt sich wie ein Reflex an. Menschen
 vertrauen Reflexen nicht. Sie vertrauen Pausen. Das ist kein technisches Argument. Es ist ein
 menschliches.
@@ -319,5 +318,6 @@ Wenn sich die Nerds im Jahr 2026 über die nahe Zukunft unterhalten, hört sich 
 mehr wie Science-Fiction an, sondern wie die Architekturen einer neuen Realität. Vielleicht
 klingt das so: Wir verlassen den reinen Text-Raum. Die Modelle bauen interne Simulationen
 der Realität. Wenn du der KI sagst: ‚Wirf die Vase um‘, weiß sie nicht nur, dass das Wort
-‚Scherben‘ folgen muss, sie berechnet die Flugbahn im latenten Raum. Die Ära des „FrageAntwort-Spiels“ ist vorbei. Wir bewegen uns auf eine Welt zu, in der KI wie Elektrizität ist:
+‚Scherben‘ folgen muss, sie berechnet die Flugbahn im latenten Raum. 
+Die Ära des „FrageAntwort-Spiels“ ist vorbei. Wir bewegen uns auf eine Welt zu, in der KI wie Elektrizität ist:
 Sie ist einfach da, sie fließt im Hintergrund, und man merkt sie erst, wenn sie mal ausfällt.
