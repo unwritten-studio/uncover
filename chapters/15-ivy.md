@@ -1,8 +1,7 @@
 # Ivy – Bibliothekswissen bekommt eine Stimme
 
-## Sabine sitzt vor ihrem blauen Arbeits-Laptop. Vor ihr liegen
 
-hunderte Seiten: Regelwerke, Vorschriften, Best Practices
+Sabine sitzt vor ihrem blauen Arbeits-Laptop. Vor ihr liegen hunderte Seiten: Regelwerke, Vorschriften, Best Practices
 für Open Libraries. Alles, was sie in Jahren zusammengetragen hat. Alles, was eine Kommune braucht, um eine
 offene Bibliothek aufzubauen. Aber niemand liest es. Das
 Telefon klingelt. Wieder eine Frage. „Wie ist das mit der
