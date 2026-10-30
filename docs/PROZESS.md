@@ -33,4 +33,4 @@ Das lokale Modell sieht immer nur einen Ausschnitt plus einen Auftrag. Es sieht 
 - **Quellen sind schreibgeschützt.** In `quellen/` wird nie etwas von Hand oder von einem Modell verändert.
 - **Den Auftrag reparieren, nicht den Text.** Ist ein Ergebnis schwach, stimmt der Auftrag oder das Stilmodell nicht. Korrigiert wird dort, dann wird der Text neu erzeugt.
 - **Nachvollziehbarkeit.** Szene → Karten → Quellstellen. Was sich nicht zurückverfolgen lässt, kommt nicht hinein.
-- **Kleine, geprüfte Schritte.** Jede Stufe kommt als Pull Request.
+- **Kleine, geprüfte Schritte.** Jede Stufe wird einzeln committet und in der `ROADMAP.md` festgehalten.
