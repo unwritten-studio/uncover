@@ -1,55 +1,55 @@
 # Uncover
 
-**Worte werden Welten.** A novel built from the raw material of [unwritten](https://unwritten.studio/).
+**Worte werden Welten.** Ein Roman, gebaut aus dem Rohmaterial von [unwritten](https://unwritten.studio/).
 
 ---
 
-## What this is
+## Worum es geht
 
-Since 2022, unwritten has been making stories walkable — books that talk back, companions built from knowledge, conversations with literature. Bernd has been chronicling that journey as a non-fiction manuscript, *Das begehbare Buch 2.0*.
+Seit 2022 macht unwritten Geschichten begehbar – Bücher, die zurücksprechen, Gefährten aus Wissen, Gespräche mit Literatur. Bernd hält diesen Weg als Sachbuch-Manuskript fest: *Das begehbare Buch 2.0*.
 
-This repository turns that manuscript into something else entirely: **a novel.**
+Dieses Repository macht daraus etwas ganz anderes: **einen Roman.**
 
-Not a cleaned-up edition. Not a chapter-by-chapter rewrite. The manuscript goes through the mixer — taken apart into its smallest pieces: scenes, people, facts, quotes, anecdotes, motifs. From that card box, a new book is built: one that weaves its story across several narrative layers and is genuinely gripping to read.
+Keine bereinigte Ausgabe. Keine Überarbeitung Kapitel für Kapitel. Das Manuskript geht einmal durch den Mixer – zerlegt in seine kleinsten Teile: Szenen, Menschen, Fakten, Zitate, Anekdoten, Motive. Aus diesem Zettelkasten entsteht ein neues Buch, das seine Geschichte über mehrere Erzählebenen verwebt und wirklich spannend zu lesen ist.
 
-The inspiration is Wolf Haas' *Wackelkontakt* — not to copy it, but as proof of what becomes possible when you master your craft and can braid a story across levels. See [`docs/GOAL.md`](docs/GOAL.md).
+Die Inspiration ist Wolf Haas' *Wackelkontakt* – nicht als Vorlage zum Kopieren, sondern als Beweis dafür, was möglich wird, wenn man sein Handwerk beherrscht und eine Geschichte über Ebenen hinweg verflechten kann. Siehe [`docs/ZIEL.md`](docs/ZIEL.md).
 
-## How it works
+## Wie es funktioniert
 
-The method is [Buchleim](https://buchleim.unwritten.studio): first understand what is there, then decide what becomes of it. Ten steps, from securing the sources to binding the book.
+Die Methode ist [Buchleim](https://buchleim.unwritten.studio): Erst verstehen, was da ist. Dann entscheiden, was daraus wird. Zehn Schritte, vom Sichern der Quellen bis zum gebundenen Buch.
 
-Work is split by kind:
+Die Arbeit ist nach Art geteilt:
 
-- **Thinking, structure, decisions, code, repository** — Claude.
-- **Text work** (breaking down, drafting, revising against precise briefs) — a local model.
-- **Judgment on what reads well** — humans. Nothing scales before a sample chapter has been read and approved.
+- **Denken, Struktur, Entscheidungen, Code, Repository** – Claude.
+- **Textarbeit** (zerlegen, entwerfen, überarbeiten nach präzisen Aufträgen) – ein lokales Modell.
+- **Urteil darüber, was trägt** – Menschen. Nichts wird skaliert, bevor ein Musterkapitel gelesen und freigegeben ist.
 
-Details: [`docs/PROCESS.md`](docs/PROCESS.md).
+Details: [`docs/PROZESS.md`](docs/PROZESS.md).
 
-## A moving source
+## Eine bewegliche Quelle
 
-Bernd keeps writing. A new version of the manuscript arrives as a PDF every one to two weeks. That is not a problem to be solved, it is the working condition. Every new version is ingested the same way: extracted, compared against the previous one, and only what actually changed flows into the card box and, where it matters, into the novel.
+Bernd schreibt weiter. Alle ein bis zwei Wochen kommt eine neue Fassung des Manuskripts als PDF. Das ist kein Problem, das gelöst werden muss, sondern die Arbeitsbedingung. Jede neue Fassung wird auf dieselbe Weise eingepflegt: extrahiert, mit der vorigen verglichen – und nur was sich tatsächlich geändert hat, fließt in den Zettelkasten und, wo es zählt, in den Roman.
 
-Details: [`docs/INGEST.md`](docs/INGEST.md).
+Details: [`docs/EINPFLEGEN.md`](docs/EINPFLEGEN.md).
 
-## Status
+## Stand
 
-Fresh start on 2026-10-30. Everything earlier (the open non-fiction draft and the editing dashboard) was cleared from this branch of work; it remains available in the git history up to commit `2663c97`.
+Neuanfang am 30.10.2026. Alles Frühere – der offene Sachbuch-Entwurf und das Bearbeitungs-Dashboard – wurde entfernt und bleibt in der Git-Historie bis Commit `2663c97` erhalten.
 
-What happens next and what is done: [`ROADMAP.md`](ROADMAP.md).
+Was erledigt ist und was als Nächstes kommt: [`ROADMAP.md`](ROADMAP.md).
 
-## Layout (planned)
+## Aufbau (geplant)
 
 ```
-sources/        Bernd's versions, extracted, never edited
-zettelkasten/   the cards: the manuscript taken apart
-architecture/   style model, narrative layers, scene plan
-briefs/         the exact tasks given to the local model
-novel/          the novel itself
-tools/          ingest and build scripts
-docs/           goal, process, ingest design
+quellen/        Bernds Fassungen als extrahierter Text, nie bearbeitet
+zettelkasten/   die Karten: das Manuskript in seinen Teilen
+architektur/    Stilmodell, Erzählebenen, Szenenplan
+auftraege/      die genauen Aufträge an das lokale Modell
+roman/          der Roman selbst
+werkzeuge/      Skripte für Einpflegen und Bauen
+docs/           Ziel, Prozess, Einpflegen
 ```
 
 ## Team
 
-[unwritten](https://unwritten.studio/) — Worte werden Welten. Contact: post@unwritten.studio
+[unwritten](https://unwritten.studio/) – Worte werden Welten. Kontakt: post@unwritten.studio
