@@ -1,76 +1,55 @@
-# Ein Buch, das zurückschreibt.
+# Uncover
 
-**Das begehbare Buch 2.0** ist die Geschichte eines Startups, das Literatur durch KI zum Leben erweckt – und die Geschichte der Menschen, die dabei nicht aufgehört haben zu staunen.
-
-Hier entsteht es. Offen. Im Werden.
+**Worte werden Welten.** A novel built from the raw material of [unwritten](https://unwritten.studio/).
 
 ---
 
-## Was ist das hier?
+## What this is
 
-Ein Sachbuch, das sich nicht wie eines anfühlt. Dokumentation, die liest wie Prosa. Die Geschichte von [unwritten](https://unwritten.studio/) – einem interdisziplinären Team aus Nürnberg, das seit 2022 daran arbeitet, Geschichten begehbar zu machen.
+Since 2022, unwritten has been making stories walkable — books that talk back, companions built from knowledge, conversations with literature. Bernd has been chronicling that journey as a non-fiction manuscript, *Das begehbare Buch 2.0*.
 
-Das Buch entsteht in Markdown, Kapitel für Kapitel, gemeinsam und öffentlich. Der aktuelle Stand ist immer der aktuelle Stand – kein Hochglanz, kein Feierabendprodukt.
+This repository turns that manuscript into something else entirely: **a novel.**
 
----
+Not a cleaned-up edition. Not a chapter-by-chapter rewrite. The manuscript goes through the mixer — taken apart into its smallest pieces: scenes, people, facts, quotes, anecdotes, motifs. From that card box, a new book is built: one that weaves its story across several narrative layers and is genuinely gripping to read.
 
-## Kapitel
+The inspiration is Wolf Haas' *Wackelkontakt* — not to copy it, but as proof of what becomes possible when you master your craft and can braid a story across levels. See [`docs/GOAL.md`](docs/GOAL.md).
 
-| # | Titel | Status |
-|---|-------|--------|
-| Prolog | Die Schwelle | in Arbeit |
-| 01 | Das begehbare Buch | in Arbeit |
-| 02 | Wissen, das spricht | in Arbeit |
-| 03 | Einbug | in Arbeit |
-| 04 | Lebensgeschichten am Lagerfeuer | in Arbeit |
-| 05 | Wenn Maschinen an Grenzen stoßen | in Arbeit |
-| 06 | Zwischen den Zeilen | in Arbeit |
-| 07 | Der Video-Call mit Tim O'Reilly | in Arbeit |
-| 08 | Anfragen von Unternehmen | in Arbeit |
-| 09 | Gespräch mit dem Verleger | in Arbeit |
-| 10 | Wissen wird Gespräch | in Arbeit |
-| 11 | Frankfurter Buchmesse 2024 | in Arbeit |
-| 12 | Ivy | in Arbeit |
-| 13 | Der Concierge | in Arbeit |
-| 14 | Die Pipeline | in Arbeit |
-| Epilog | Die ungeschriebene Zukunft | in Arbeit |
+## How it works
 
----
+The method is [Buchleim](https://buchleim.unwritten.studio): first understand what is there, then decide what becomes of it. Ten steps, from securing the sources to binding the book.
 
-## Mitmachen
+Work is split by kind:
 
-Jedes Kapitel ist eine Markdown-Datei in `chapters/`. Wer schreiben will, braucht nichts weiter als einen Texteditor – oder einfach den Browser.
+- **Thinking, structure, decisions, code, repository** — Claude.
+- **Text work** (breaking down, drafting, revising against precise briefs) — a local model.
+- **Judgment on what reads well** — humans. Nothing scales before a sample chapter has been read and approved.
 
-**Für Schreibende ohne Git-Erfahrung:** Dateien können direkt auf GitHub bearbeitet werden. Kapitel aufmachen, oben rechts auf den Stift klicken, schreiben, speichern.
+Details: [`docs/PROCESS.md`](docs/PROCESS.md).
 
-**Für alle anderen:** Fork, Branch, Pull Request – der übliche Weg.
+## A moving source
 
-Fragen, Anmerkungen, Rohfassungen die noch nicht pull-request-reif sind: Issues sind willkommen.
+Bernd keeps writing. A new version of the manuscript arrives as a PDF every one to two weeks. That is not a problem to be solved, it is the working condition. Every new version is ingested the same way: extracted, compared against the previous one, and only what actually changed flows into the card box and, where it matters, into the novel.
 
----
+Details: [`docs/INGEST.md`](docs/INGEST.md).
 
-## Bauen
+## Status
 
-PDF aus dem aktuellen Stand generieren:
+Fresh start on 2026-10-30. Everything earlier (the open non-fiction draft and the editing dashboard) was cleared from this branch of work; it remains available in the git history up to commit `2663c97`.
 
-```bash
-./build.sh
+What happens next and what is done: [`ROADMAP.md`](ROADMAP.md).
+
+## Layout (planned)
+
 ```
-
-Das Ergebnis landet in `build/`. Voraussetzung: Pandoc und XeLaTeX installiert.
-
----
-
-## Dashboard
-
-**Uncoverboard** – Browser-Dashboard zum Lesen und Bearbeiten der Kapitel, direkt aus dem Browser heraus:
-
-→ [unwritten-studio.github.io/uncover/dashboard/uncoverboard.html](https://unwritten-studio.github.io/uncover/dashboard/uncoverboard.html)
-
-Kein Setup nötig. Zum Speichern einmalig einen GitHub Token eintragen (⚙ Token oben rechts).
-
----
+sources/        Bernd's versions, extracted, never edited
+zettelkasten/   the cards: the manuscript taken apart
+architecture/   style model, narrative layers, scene plan
+briefs/         the exact tasks given to the local model
+novel/          the novel itself
+tools/          ingest and build scripts
+docs/           goal, process, ingest design
+```
 
 ## Team
 
-[unwritten](https://unwritten.studio/) – Worte werden Welten.
+[unwritten](https://unwritten.studio/) — Worte werden Welten. Contact: post@unwritten.studio
