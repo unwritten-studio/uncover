@@ -14,6 +14,18 @@ Also passt sich das Repository an ihn an, nicht umgekehrt. Eine neue Fassung auf
 
 Der Aufwand einer neuen Fassung richtet sich deshalb danach, *wie viel Bernd geändert hat*, nicht nach dem Umfang des Buchs.
 
+## Aufruf
+
+```bash
+python3 werkzeuge/einpflegen.py PFAD/ZU/BERNDS.pdf
+```
+
+Das Fassungsdatum wird aus dem Erstellungsdatum des PDFs gelesen; abweichend mit `--datum JJJJ-MM-TT`. Ein PDF, das schon eingepflegt ist (gleiche Prüfsumme), wird abgewiesen. Danach den Bericht unter `quellen/berichte/` lesen, Entscheidungen eintragen, alles als Pull Request einreichen.
+
+Voraussetzung: Python 3.10+ und Poppler (`pdftotext`, `pdfinfo`; auf dem Mac `brew install poppler`). Sonst keine Abhängigkeiten.
+
+Tests: `python3 -m unittest discover werkzeuge`
+
 ## Ablauf
 
 ```
@@ -45,6 +57,44 @@ neues PDF
 
 Die Kennungen überstehen Umstellungen und leichte Bearbeitung, weil Passagen über inhaltliche Ähnlichkeit zugeordnet werden, nicht über ihre Position. Das ist wichtig: Bernd stellt regelmäßig um und benennt Kapitel neu.
 
+### Einzelheiten
+
+- **Passagen** sind die Textblöcke des PDF-Layouts – in Bernds Export entsprechen sie weitgehend den Absätzen. Einzeilige Blöcke ohne Satzzeichen gelten als Überschrift.
+- **Entfernt** werden Seitenzahlen und das Inhaltsverzeichnis (erkannt an Füllpunkten vor Seitenzahlen). Sonst würde jede neue Seitenaufteilung als Änderung erscheinen.
+- **Seitenumbrüche:** Endet eine Seite mitten im Satz und beginnt die nächste klein, werden beide Teile zu einer Passage verbunden.
+- **Vergleich:** Typografie (Anführungszeichen, Gedankenstriche, Auslassungspunkte, Leerraum) zählt nicht als Änderung. Ähnlichkeit wird auf Wortebene gemessen; ab 60 % gilt eine Passage als „bearbeitet“, darunter als neu.
+- **Kennungen** werden aus dem Text der ersten Fassung abgeleitet (`p` + Prüfsummenanfang) und danach nur noch vererbt. Eine entfallene Kennung wird nie wieder vergeben.
+
+### Gemessen
+
+Simulation einer nächsten Fassung auf Basis des echten Manuskripts (824 Passagen):
+
+| Änderung | erkannt |
+|---|---|
+| ein Kapitel (40 Passagen) ans Ende verschoben | 40 von 40 als verschoben, Kennungen erhalten |
+| 30 Passagen bearbeitet | 30 von 30 |
+| 15 gelöscht, 15 neu eingefügt | alle |
+| 3 Passagen in zwei geteilt | 3 von 3 (eine Hälfte „bearbeitet“, die andere „neu“) |
+| unberührte Passagen fälschlich markiert | 0 |
+
+Belastungsprobe: Die Hälfte aller Passagen wird umgeschrieben. Bis etwa 40 % ausgetauschter Wörter pro Passage bleibt die Zuordnung erhalten; darüber wird sie als „neu“ plus „entfallen“ geführt – was inhaltlich dann auch stimmt. Laufzeit auch in diesem Fall unter drei Sekunden.
+
+### Wie Karten und Szenen auf Quellen verweisen
+
+Damit Schritt 4 (Auswirkung) greift, nennt jede Karte in `zettelkasten/` die Kennungen der Passagen, aus denen sie stammt, und jede Szene in `roman/` die Karten (Dateiname ohne `.md`), die sie verwendet:
+
+```markdown
+---
+quellen: [p3f9a1c, p08bd42]
+---
+```
+
+```markdown
+---
+karten: [anna-erster-kontakt, nuernberg-2022]
+---
+```
+
 ## Wo was liegt
 
 ```
@@ -69,4 +119,6 @@ Für jede markierte Änderung eines von drei Ergebnissen, festgehalten im Berich
 ## Grenzen
 
 - Sehr große Umbauten (das halbe Buch neu geschrieben) erzeugen einen langen Bericht. Der Ablauf funktioniert trotzdem, es sind nur mehr Entscheidungen.
-- Die Textextraktion hängt vom PDF-Export ab. Ändert sich das Exportformat, muss der Extraktionsschritt eventuell angepasst werden. Das zeigt sich sofort im Bericht – an einer unplausibel hohen Zahl von Änderungen.
+- Die Textextraktion hängt vom PDF-Export ab. Ändert sich das Exportformat, muss der Extraktionsschritt eventuell angepasst werden. Das zeigt sich sofort im Bericht – an einer unplausibel hohen Zahl von Änderungen; ab mehr als der Hälfte geänderter Passagen warnt der Bericht ausdrücklich.
+- Werden zwei Absätze zu einem zusammengelegt, behält der neue Absatz die Kennung des ähnlicheren; der andere erscheint als „entfallen“. Bei der Entscheidung im Bericht ist das leicht zu erkennen.
+- Bilder werden nicht übernommen, nur Text.
